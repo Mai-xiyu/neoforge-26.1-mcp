@@ -7,7 +7,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Minecraft-1.26.1-green" alt="MC 1.26.1">
   <img src="https://img.shields.io/badge/NeoForge-26.1.0.17--beta-orange" alt="NeoForge 26.1">
-  <img src="https://img.shields.io/badge/Java-21-blue" alt="Java 21">
+  <img src="https://img.shields.io/badge/Java-25-blue" alt="Java 25">
   <img src="https://img.shields.io/badge/MCP-SDK_1.12-purple" alt="MCP SDK">
   <img src="https://img.shields.io/badge/Tools-20-red" alt="20 Tools">
 </p>

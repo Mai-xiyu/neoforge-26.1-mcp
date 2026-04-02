@@ -1,0 +1,4 @@
+# PacketVisitor
+
+**Package:** `net.minecraft.network`
+**Type:** interface

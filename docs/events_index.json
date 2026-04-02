@@ -1,0 +1,5466 @@
+[
+  {
+    "name": "LerpingBossEvent",
+    "fullPath": "net.minecraft.client.gui.components.LerpingBossEvent",
+    "desc": "",
+    "category": "gui",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "targetPercent",
+        "type": "float",
+        "desc": ""
+      },
+      {
+        "name": "setTime",
+        "type": "long",
+        "desc": ""
+      },
+      {
+        "name": "progress",
+        "type": "float",
+        "desc": ""
+      }
+    ],
+    "superClass": "BossEvent",
+    "deprecated": false
+  },
+  {
+    "name": "ContainerEventHandler",
+    "fullPath": "net.minecraft.client.gui.components.events.ContainerEventHandler",
+    "desc": "",
+    "category": "gui",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "dragging",
+        "type": "boolean",
+        "desc": ""
+      },
+      {
+        "name": "focused",
+        "type": "GuiEventListener",
+        "desc": ""
+      },
+      {
+        "name": "currentFocusPath",
+        "type": "ComponentPath",
+        "desc": ""
+      }
+    ],
+    "superClass": "GuiEventListener",
+    "deprecated": false
+  },
+  {
+    "name": "TabNavigationBar",
+    "fullPath": "net.minecraft.client.gui.components.tabs.TabNavigationBar",
+    "desc": "",
+    "category": "gui",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "rectangle",
+        "type": "ScreenRectangle",
+        "desc": ""
+      }
+    ],
+    "superClass": "AbstractContainerEventHandler",
+    "deprecated": false
+  },
+  {
+    "name": "LoggedChatMessage",
+    "fullPath": "net.minecraft.client.multiplayer.chat.LoggedChatMessage",
+    "desc": "",
+    "category": "client-network",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "CODEC",
+        "type": "MapCodec<LoggedChatMessage.Player>",
+        "desc": ""
+      },
+      {
+        "name": "CODEC",
+        "type": "MapCodec<LoggedChatMessage.System>",
+        "desc": ""
+      },
+      {
+        "name": "timeComponent",
+        "type": "private Component",
+        "desc": ""
+      }
+    ],
+    "superClass": "LoggedChatEvent",
+    "deprecated": false
+  },
+  {
+    "name": "SoundEngineExecutor",
+    "fullPath": "net.minecraft.client.sounds.SoundEngineExecutor",
+    "desc": "",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "runningThread",
+        "type": "Thread",
+        "desc": ""
+      }
+    ],
+    "superClass": "BlockableEventLoop<Runnable>",
+    "deprecated": false
+  },
+  {
+    "name": "CustomBossEvent",
+    "fullPath": "net.minecraft.server.bossevents.CustomBossEvent",
+    "desc": "",
+    "category": "server",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "textId",
+        "type": "public ResourceLocation",
+        "desc": ""
+      },
+      {
+        "name": "value",
+        "type": "public int",
+        "desc": ""
+      },
+      {
+        "name": "max",
+        "type": "public int",
+        "desc": ""
+      },
+      {
+        "name": "displayName",
+        "type": "public final Component",
+        "desc": ""
+      }
+    ],
+    "superClass": "ServerBossEvent",
+    "deprecated": false
+  },
+  {
+    "name": "ServerBossEvent",
+    "fullPath": "net.minecraft.server.level.ServerBossEvent",
+    "desc": "",
+    "category": "server-level",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "visible",
+        "type": "public boolean",
+        "desc": ""
+      },
+      {
+        "name": "players",
+        "type": "public Collection<ServerPlayer>",
+        "desc": ""
+      }
+    ],
+    "superClass": "BossEvent",
+    "deprecated": false
+  },
+  {
+    "name": "ChunkGenerationEvent",
+    "fullPath": "net.minecraft.util.profiling.jfr.event.ChunkGenerationEvent",
+    "desc": "",
+    "category": "util",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "EVENT_NAME",
+        "type": "String",
+        "desc": ""
+      },
+      {
+        "name": "TYPE",
+        "type": "EventType",
+        "desc": ""
+      },
+      {
+        "name": "worldPosX",
+        "type": "int",
+        "desc": ""
+      },
+      {
+        "name": "worldPosZ",
+        "type": "int",
+        "desc": ""
+      },
+      {
+        "name": "chunkPosX",
+        "type": "int",
+        "desc": ""
+      },
+      {
+        "name": "chunkPosZ",
+        "type": "int",
+        "desc": ""
+      },
+      {
+        "name": "targetStatus",
+        "type": "String",
+        "desc": ""
+      },
+      {
+        "name": "level",
+        "type": "String",
+        "desc": ""
+      },
+      {
+        "name": "WORLD_POS_X",
+        "type": "String",
+        "desc": ""
+      },
+      {
+        "name": "WORLD_POS_Z",
+        "type": "String",
+        "desc": ""
+      },
+      {
+        "name": "CHUNK_POS_X",
+        "type": "String",
+        "desc": ""
+      },
+      {
+        "name": "CHUNK_POS_Z",
+        "type": "String",
+        "desc": ""
+      },
+      {
+        "name": "STATUS",
+        "type": "String",
+        "desc": ""
+      },
+      {
+        "name": "LEVEL",
+        "type": "String",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "ChunkRegionReadEvent",
+    "fullPath": "net.minecraft.util.profiling.jfr.event.ChunkRegionReadEvent",
+    "desc": "",
+    "category": "util",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "EVENT_NAME",
+        "type": "String",
+        "desc": ""
+      },
+      {
+        "name": "TYPE",
+        "type": "EventType",
+        "desc": ""
+      }
+    ],
+    "superClass": "ChunkRegionIoEvent",
+    "deprecated": false
+  },
+  {
+    "name": "ChunkRegionWriteEvent",
+    "fullPath": "net.minecraft.util.profiling.jfr.event.ChunkRegionWriteEvent",
+    "desc": "",
+    "category": "util",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "EVENT_NAME",
+        "type": "String",
+        "desc": ""
+      },
+      {
+        "name": "TYPE",
+        "type": "EventType",
+        "desc": ""
+      }
+    ],
+    "superClass": "ChunkRegionIoEvent",
+    "deprecated": false
+  },
+  {
+    "name": "NetworkSummaryEvent",
+    "fullPath": "net.minecraft.util.profiling.jfr.event.NetworkSummaryEvent",
+    "desc": "",
+    "category": "util",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "EVENT_NAME",
+        "type": "String",
+        "desc": ""
+      },
+      {
+        "name": "TYPE",
+        "type": "EventType",
+        "desc": ""
+      },
+      {
+        "name": "remoteAddress",
+        "type": "String",
+        "desc": ""
+      },
+      {
+        "name": "sentBytes",
+        "type": "long",
+        "desc": ""
+      },
+      {
+        "name": "sentPackets",
+        "type": "int",
+        "desc": ""
+      },
+      {
+        "name": "receivedBytes",
+        "type": "long",
+        "desc": ""
+      },
+      {
+        "name": "receivedPackets",
+        "type": "int",
+        "desc": ""
+      },
+      {
+        "name": "REMOTE_ADDRESS",
+        "type": "String",
+        "desc": ""
+      },
+      {
+        "name": "SENT_BYTES",
+        "type": "String",
+        "desc": ""
+      },
+      {
+        "name": "RECEIVED_BYTES",
+        "type": "String",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "PacketReceivedEvent",
+    "fullPath": "net.minecraft.util.profiling.jfr.event.PacketReceivedEvent",
+    "desc": "",
+    "category": "util",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "NAME",
+        "type": "String",
+        "desc": ""
+      },
+      {
+        "name": "TYPE",
+        "type": "EventType",
+        "desc": ""
+      }
+    ],
+    "superClass": "PacketEvent",
+    "deprecated": false
+  },
+  {
+    "name": "PacketSentEvent",
+    "fullPath": "net.minecraft.util.profiling.jfr.event.PacketSentEvent",
+    "desc": "",
+    "category": "util",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "NAME",
+        "type": "String",
+        "desc": ""
+      },
+      {
+        "name": "TYPE",
+        "type": "EventType",
+        "desc": ""
+      }
+    ],
+    "superClass": "PacketEvent",
+    "deprecated": false
+  },
+  {
+    "name": "ServerTickTimeEvent",
+    "fullPath": "net.minecraft.util.profiling.jfr.event.ServerTickTimeEvent",
+    "desc": "",
+    "category": "util",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "EVENT_NAME",
+        "type": "String",
+        "desc": ""
+      },
+      {
+        "name": "TYPE",
+        "type": "EventType",
+        "desc": ""
+      },
+      {
+        "name": "averageTickDurationNanos",
+        "type": "long",
+        "desc": ""
+      },
+      {
+        "name": "AVERAGE_TICK_DURATION",
+        "type": "String",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "WorldLoadFinishedEvent",
+    "fullPath": "net.minecraft.util.profiling.jfr.event.WorldLoadFinishedEvent",
+    "desc": "",
+    "category": "util",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "EVENT_NAME",
+        "type": "String",
+        "desc": ""
+      },
+      {
+        "name": "TYPE",
+        "type": "EventType",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "LayerLightEventListener",
+    "fullPath": "net.minecraft.world.level.lighting.LayerLightEventListener",
+    "desc": "",
+    "category": "world",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "LightEventListener",
+    "deprecated": false
+  },
+  {
+    "name": "Minecraft",
+    "fullPath": "net.minecraft.client.Minecraft",
+    "desc": "",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "ON_OSX",
+        "type": "boolean",
+        "desc": ""
+      },
+      {
+        "name": "DEFAULT_FONT",
+        "type": "ResourceLocation",
+        "desc": ""
+      },
+      {
+        "name": "UNIFORM_FONT",
+        "type": "ResourceLocation",
+        "desc": ""
+      },
+      {
+        "name": "ALT_FONT",
+        "type": "ResourceLocation",
+        "desc": ""
+      },
+      {
+        "name": "UPDATE_DRIVERS_ADVICE",
+        "type": "String",
+        "desc": ""
+      },
+      {
+        "name": "levelRenderer",
+        "type": "LevelRenderer",
+        "desc": ""
+      },
+      {
+        "name": "particleEngine",
+        "type": "ParticleEngine",
+        "desc": ""
+      },
+      {
+        "name": "font",
+        "type": "Font",
+        "desc": ""
+      },
+      {
+        "name": "fontFilterFishy",
+        "type": "Font",
+        "desc": ""
+      },
+      {
+        "name": "gameRenderer",
+        "type": "GameRenderer",
+        "desc": ""
+      },
+      {
+        "name": "debugRenderer",
+        "type": "DebugRenderer",
+        "desc": ""
+      },
+      {
+        "name": "gui",
+        "type": "Gui",
+        "desc": ""
+      },
+      {
+        "name": "options",
+        "type": "Options",
+        "desc": ""
+      },
+      {
+        "name": "mouseHandler",
+        "type": "MouseHandler",
+        "desc": ""
+      },
+      {
+        "name": "keyboardHandler",
+        "type": "KeyboardHandler",
+        "desc": ""
+      },
+      {
+        "name": "gameDirectory",
+        "type": "File",
+        "desc": ""
+      },
+      {
+        "name": "gameMode",
+        "type": "MultiPlayerGameMode",
+        "desc": ""
+      },
+      {
+        "name": "level",
+        "type": "ClientLevel",
+        "desc": ""
+      },
+      {
+        "name": "player",
+        "type": "LocalPlayer",
+        "desc": ""
+      },
+      {
+        "name": "gameLoadFinished",
+        "type": "public boolean",
+        "desc": ""
+      },
+      {
+        "name": "mainRenderTarget",
+        "type": "public RenderTarget",
+        "desc": ""
+      },
+      {
+        "name": "launchedVersion",
+        "type": "public String",
+        "desc": ""
+      },
+      {
+        "name": "versionType",
+        "type": "public String",
+        "desc": ""
+      },
+      {
+        "name": "enforceUnicode",
+        "type": "public boolean",
+        "desc": ""
+      },
+      {
+        "name": "levelSource",
+        "type": "public LevelStorageSource",
+        "desc": ""
+      },
+      {
+        "name": "fps",
+        "type": "public int",
+        "desc": ""
+      },
+      {
+        "name": "frameTimeNs",
+        "type": "public long",
+        "desc": ""
+      },
+      {
+        "name": "framerateLimit",
+        "type": "private int",
+        "desc": ""
+      },
+      {
+        "name": "running",
+        "type": "public boolean",
+        "desc": ""
+      },
+      {
+        "name": "musicManager",
+        "type": "public MusicManager",
+        "desc": ""
+      },
+      {
+        "name": "levelRunningNormally",
+        "type": "private boolean",
+        "desc": ""
+      },
+      {
+        "name": "multiplayerServer",
+        "type": "private boolean",
+        "desc": ""
+      },
+      {
+        "name": "telemetryManager",
+        "type": "public ClientTelemetryManager",
+        "desc": ""
+      },
+      {
+        "name": "gpuUtilization",
+        "type": "public double",
+        "desc": ""
+      },
+      {
+        "name": "profileKeyPairManager",
+        "type": "public ProfileKeyPairManager",
+        "desc": ""
+      },
+      {
+        "name": "nameBanned",
+        "type": "public boolean",
+        "desc": ""
+      },
+      {
+        "name": "chatStatus",
+        "type": "public Minecraft.ChatStatus",
+        "desc": ""
+      },
+      {
+        "name": "demo",
+        "type": "public final boolean",
+        "desc": ""
+      },
+      {
+        "name": "connection",
+        "type": "ClientPacketListener",
+        "desc": ""
+      },
+      {
+        "name": "instance",
+        "type": "public static Minecraft",
+        "desc": ""
+      },
+      {
+        "name": "currentServer",
+        "type": "ServerData",
+        "desc": ""
+      },
+      {
+        "name": "localServer",
+        "type": "public boolean",
+        "desc": ""
+      },
+      {
+        "name": "singleplayerServer",
+        "type": "IntegratedServer",
+        "desc": ""
+      },
+      {
+        "name": "singleplayer",
+        "type": "public boolean",
+        "desc": ""
+      },
+      {
+        "name": "user",
+        "type": "public User",
+        "desc": ""
+      },
+      {
+        "name": "gameProfile",
+        "type": "public GameProfile",
+        "desc": ""
+      },
+      {
+        "name": "proxy",
+        "type": "public Proxy",
+        "desc": ""
+      },
+      {
+        "name": "textureManager",
+        "type": "public TextureManager",
+        "desc": ""
+      },
+      {
+        "name": "resourceManager",
+        "type": "public ResourceManager",
+        "desc": ""
+      },
+      {
+        "name": "resourcePackRepository",
+        "type": "public PackRepository",
+        "desc": ""
+      },
+      {
+        "name": "vanillaPackResources",
+        "type": "public VanillaPackResources",
+        "desc": ""
+      },
+      {
+        "name": "downloadedPackSource",
+        "type": "public DownloadedPackSource",
+        "desc": ""
+      },
+      {
+        "name": "resourcePackDirectory",
+        "type": "public Path",
+        "desc": ""
+      },
+      {
+        "name": "languageManager",
+        "type": "public LanguageManager",
+        "desc": ""
+      },
+      {
+        "name": "paused",
+        "type": "public boolean",
+        "desc": ""
+      },
+      {
+        "name": "gpuWarnlistManager",
+        "type": "public GpuWarnlistManager",
+        "desc": ""
+      },
+      {
+        "name": "soundManager",
+        "type": "public SoundManager",
+        "desc": ""
+      },
+      {
+        "name": "situationalMusic",
+        "type": "public Music",
+        "desc": ""
+      },
+      {
+        "name": "minecraftSessionService",
+        "type": "public MinecraftSessionService",
+        "desc": ""
+      },
+      {
+        "name": "skinManager",
+        "type": "public SkinManager",
+        "desc": ""
+      },
+      {
+        "name": "cameraEntity",
+        "type": "Entity",
+        "desc": ""
+      },
+      {
+        "name": "runningThread",
+        "type": "Thread",
+        "desc": ""
+      },
+      {
+        "name": "blockRenderer",
+        "type": "public BlockRenderDispatcher",
+        "desc": ""
+      },
+      {
+        "name": "entityRenderDispatcher",
+        "type": "public EntityRenderDispatcher",
+        "desc": ""
+      },
+      {
+        "name": "blockEntityRenderDispatcher",
+        "type": "public BlockEntityRenderDispatcher",
+        "desc": ""
+      },
+      {
+        "name": "itemRenderer",
+        "type": "public ItemRenderer",
+        "desc": ""
+      },
+      {
+        "name": "fixerUpper",
+        "type": "public DataFixer",
+        "desc": ""
+      },
+      {
+        "name": "timer",
+        "type": "public DeltaTracker",
+        "desc": ""
+      },
+      {
+        "name": "blockColors",
+        "type": "public BlockColors",
+        "desc": ""
+      },
+      {
+        "name": "toasts",
+        "type": "public ToastComponent",
+        "desc": ""
+      },
+      {
+        "name": "tutorial",
+        "type": "public Tutorial",
+        "desc": ""
+      },
+      {
+        "name": "windowActive",
+        "type": "public boolean",
+        "desc": ""
+      },
+      {
+        "name": "hotbarManager",
+        "type": "public HotbarManager",
+        "desc": ""
+      },
+      {
+        "name": "modelManager",
+        "type": "public ModelManager",
+        "desc": ""
+      },
+      {
+        "name": "paintingTextures",
+        "type": "public PaintingTextureManager",
+        "desc": ""
+      },
+      {
+        "name": "mobEffectTextures",
+        "type": "public MobEffectTextureManager",
+        "desc": ""
+      },
+      {
+        "name": "mapDecorationTextures",
+        "type": "public MapDecorationTextureManager",
+        "desc": ""
+      },
+      {
+        "name": "guiSprites",
+        "type": "public GuiSpriteManager",
+        "desc": ""
+      },
+      {
+        "name": "profiler",
+        "type": "public ProfilerFiller",
+        "desc": ""
+      },
+      {
+        "name": "progressListener",
+        "type": "StoringChunkProgressListener",
+        "desc": ""
+      },
+      {
+        "name": "splashManager",
+        "type": "public SplashManager",
+        "desc": ""
+      },
+      {
+        "name": "overlay",
+        "type": "Overlay",
+        "desc": ""
+      },
+      {
+        "name": "playerSocialManager",
+        "type": "public PlayerSocialManager",
+        "desc": ""
+      },
+      {
+        "name": "window",
+        "type": "public Window",
+        "desc": ""
+      },
+      {
+        "name": "debugOverlay",
+        "type": "public DebugScreenOverlay",
+        "desc": ""
+      },
+      {
+        "name": "itemColors",
+        "type": "public ItemColors",
+        "desc": ""
+      },
+      {
+        "name": "entityModels",
+        "type": "public EntityModelSet",
+        "desc": ""
+      },
+      {
+        "name": "textFilteringEnabled",
+        "type": "public boolean",
+        "desc": ""
+      },
+      {
+        "name": "profileKeySignatureValidator",
+        "type": "SignatureValidator",
+        "desc": ""
+      },
+      {
+        "name": "lastInputType",
+        "type": "public InputType",
+        "desc": ""
+      },
+      {
+        "name": "narrator",
+        "type": "public GameNarrator",
+        "desc": ""
+      },
+      {
+        "name": "chatListener",
+        "type": "public ChatListener",
+        "desc": ""
+      },
+      {
+        "name": "reportingContext",
+        "type": "public ReportingContext",
+        "desc": ""
+      },
+      {
+        "name": "launcherBrand",
+        "type": "String",
+        "desc": ""
+      },
+      {
+        "name": "message",
+        "type": "public Component",
+        "desc": ""
+      }
+    ],
+    "superClass": "ReentrantBlockableEventLoop<Runnable>",
+    "deprecated": false
+  },
+  {
+    "name": "GameEventTagsProvider",
+    "fullPath": "net.minecraft.data.tags.GameEventTagsProvider",
+    "desc": "",
+    "category": "datagen",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "TagsProvider<GameEvent>",
+    "deprecated": false
+  },
+  {
+    "name": "AnvilUpdateEvent",
+    "fullPath": "net.neoforged.neoforge.event.AnvilUpdateEvent",
+    "desc": "AnvilUpdateEvent is fired whenever the input stacks (left or right) or the name in an anvil changed.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "left",
+        "type": "ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "right",
+        "type": "ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "desc": ""
+      },
+      {
+        "name": "output",
+        "type": "ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "cost",
+        "type": "long",
+        "desc": ""
+      },
+      {
+        "name": "materialCost",
+        "type": "int",
+        "desc": ""
+      },
+      {
+        "name": "player",
+        "type": "Player",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "ServerChatEvent",
+    "fullPath": "net.neoforged.neoforge.event.ServerChatEvent",
+    "desc": "This event is fired whenever a ServerboundChatPacket is received from a client\nwho has submitted their chat message.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "player",
+        "type": "ServerPlayer",
+        "desc": ""
+      },
+      {
+        "name": "username",
+        "type": "String",
+        "desc": ""
+      },
+      {
+        "name": "rawText",
+        "type": "String",
+        "desc": ""
+      },
+      {
+        "name": "message",
+        "type": "Component",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "WandererTradesEvent",
+    "fullPath": "net.neoforged.neoforge.event.village.WandererTradesEvent",
+    "desc": "WandererTradesEvent is fired during reload by TagsUpdatedEvent.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "generic",
+        "type": "List<ItemListing>",
+        "desc": ""
+      },
+      {
+        "name": "rare",
+        "type": "List<ItemListing>",
+        "desc": ""
+      },
+      {
+        "name": "genericTrades",
+        "type": "public List<ItemListing>",
+        "desc": ""
+      },
+      {
+        "name": "rareTrades",
+        "type": "public List<ItemListing>",
+        "desc": ""
+      },
+      {
+        "name": "registryAccess",
+        "type": "public RegistryAccess",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "VillageSiegeEvent",
+    "fullPath": "net.neoforged.neoforge.event.village.VillageSiegeEvent",
+    "desc": "VillageSiegeEvent is fired just before a zombie siege finds a successful location in\nVillageSiege#tryToSetupSiege(ServerLevel), to give mods the chance to stop the siege.<br>\n<br>\nThis event is ICancellableEvent; canceling stops the siege.<br>\n<br>\nThis event does not have a result.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "siege",
+        "type": "public VillageSiege",
+        "desc": ""
+      },
+      {
+        "name": "level",
+        "type": "public Level",
+        "desc": ""
+      },
+      {
+        "name": "player",
+        "type": "public Player",
+        "desc": ""
+      },
+      {
+        "name": "attemptedSpawnPos",
+        "type": "public Vec3",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "VillagerTradesEvent",
+    "fullPath": "net.neoforged.neoforge.event.village.VillagerTradesEvent",
+    "desc": "VillagerTradesEvent is fired during reload by TagsUpdatedEvent.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "trades",
+        "type": "Int2ObjectMap<List<ItemListing>>",
+        "desc": ""
+      },
+      {
+        "name": "type",
+        "type": "VillagerProfession",
+        "desc": ""
+      },
+      {
+        "name": "registryAccess",
+        "type": "public RegistryAccess",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "AddReloadListenerEvent",
+    "fullPath": "net.neoforged.neoforge.event.AddReloadListenerEvent",
+    "desc": "The main ResourceManager is recreated on each reload, just after ReloadableServerResources's creation.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "listeners",
+        "type": "public List<PreparableReloadListener>",
+        "desc": ""
+      },
+      {
+        "name": "serverResources",
+        "type": "ReloadableServerResources",
+        "desc": ""
+      },
+      {
+        "name": "conditionContext",
+        "type": "ICondition.IContext",
+        "desc": ""
+      },
+      {
+        "name": "registryAccess",
+        "type": "RegistryAccess",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "BlockEntityTypeAddBlocksEvent",
+    "fullPath": "net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent",
+    "desc": "Allows injecting new blocks into a block entity's BlockEntityType#validBlocks field in a safe manner.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "MOD",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "EntityLeaveLevelEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.EntityLeaveLevelEvent",
+    "desc": "This event is fired whenever an Entity leaves a Level.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "level",
+        "type": "Level",
+        "desc": ""
+      }
+    ],
+    "superClass": "EntityEvent",
+    "deprecated": false
+  },
+  {
+    "name": "EntityStruckByLightningEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.EntityStruckByLightningEvent",
+    "desc": "EntityStruckByLightningEvent is fired when an Entity is about to be struck by lightening.<br>\nThis event is fired whenever an EntityLightningBolt is updated to strike an Entity in\nLightningBolt#tick() via EventHooks#onEntityStruckByLightning(Entity, LightningBolt).<br>\n<br>\n#lightning contains the instance of EntityLightningBolt attempting to strike an entity.<br>\n<br>\nThis event is ICancellableEvent.<br>\nIf this event is canceled, the Entity is not struck by the lightening.<br>\n<br>\nThis event does not have a result.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "lightning",
+        "type": "public LightningBolt",
+        "desc": ""
+      }
+    ],
+    "superClass": "EntityEvent",
+    "deprecated": false
+  },
+  {
+    "name": "ItemExpireEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.item.ItemExpireEvent",
+    "desc": "Event that is fired when an ItemEntity's age has reached its maximum\nlifespan.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "extraLife",
+        "type": "int",
+        "desc": ""
+      }
+    ],
+    "superClass": "ItemEvent",
+    "deprecated": false
+  },
+  {
+    "name": "ItemTossEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.item.ItemTossEvent",
+    "desc": "Event that is fired whenever a player tosses (Q) an item or drag-n-drops a\nstack of items outside the inventory GUI screens.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "player",
+        "type": "Player",
+        "desc": ""
+      }
+    ],
+    "superClass": "ItemEvent",
+    "deprecated": false
+  },
+  {
+    "name": "ProjectileImpactEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.ProjectileImpactEvent",
+    "desc": "This event is fired on the NeoForge#EVENT_BUS.<br>\nThis event is fired when a projectile entity impacts something.<br>\nThis event is fired via EventHooks#onProjectileImpact(Projectile, HitResult)\nThis event is fired for all vanilla projectiles by Forge,\ncustom projectiles should fire this event and check the result in a similar fashion.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "rayTraceResult",
+        "type": "public HitResult",
+        "desc": ""
+      },
+      {
+        "name": "projectile",
+        "type": "public Projectile",
+        "desc": ""
+      }
+    ],
+    "superClass": "EntityEvent",
+    "deprecated": false
+  },
+  {
+    "name": "TradeWithVillagerEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.player.TradeWithVillagerEvent",
+    "desc": "Fired when a player trades with an AbstractVillager.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "merchantOffer",
+        "type": "MerchantOffer",
+        "desc": ""
+      },
+      {
+        "name": "abstractVillager",
+        "type": "AbstractVillager",
+        "desc": ""
+      }
+    ],
+    "superClass": "PlayerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "ItemTooltipEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.player.ItemTooltipEvent",
+    "desc": "",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "flags",
+        "type": "TooltipFlag",
+        "desc": ""
+      },
+      {
+        "name": "itemStack",
+        "type": "ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "toolTip",
+        "type": "List<Component>",
+        "desc": ""
+      },
+      {
+        "name": "entity",
+        "type": "Player",
+        "desc": ""
+      },
+      {
+        "name": "context",
+        "type": "TooltipContext",
+        "desc": ""
+      }
+    ],
+    "superClass": "PlayerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "PlayerDestroyItemEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.player.PlayerDestroyItemEvent",
+    "desc": "PlayerDestroyItemEvent is fired when a player destroys an item.<br>\nThis event is fired whenever a player destroys an item in\nMultiPlayerGameMode#destroyBlock(BlockPos),\nMultiPlayerGameMode#useItem(Player, InteractionHand),\nMultiPlayerGameMode#useItemOn(LocalPlayer, InteractionHand, BlockHitResult) ,\nPlayer#attack(Entity),\nPlayer#hurtCurrentlyUsedShield(float),\nPlayer#interactOn(Entity, InteractionHand),\nCommonHooks#getCraftingRemainingItem(ItemStack),\nServerPlayerGameMode#useItem(ServerPlayer, Level, ItemStack, InteractionHand) ,\nServerPlayerGameMode#useItemOn(ServerPlayer, Level, ItemStack, InteractionHand, BlockHitResult)\nand ServerPlayerGameMode#destroyBlock(BlockPos).<br>\n<br>\n#original contains the original ItemStack before the item was destroyed.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "original",
+        "type": "public ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "hand",
+        "type": "InteractionHand",
+        "desc": ""
+      }
+    ],
+    "superClass": "PlayerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "ClientInformationUpdatedEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.player.ClientInformationUpdatedEvent",
+    "desc": "ClientInformationUpdatedEvent is fired when a player changes server-synced client options,\nspecifically those in net.minecraft.server.level.ClientInformation.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "entity",
+        "type": "ServerPlayer",
+        "desc": ""
+      },
+      {
+        "name": "updatedInformation",
+        "type": "ClientInformation",
+        "desc": ""
+      },
+      {
+        "name": "oldInformation",
+        "type": "ClientInformation",
+        "desc": ""
+      }
+    ],
+    "superClass": "PlayerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "PlayerFlyableFallEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.player.PlayerFlyableFallEvent",
+    "desc": "Occurs when a player falls, but is able to fly.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "distance",
+        "type": "public float",
+        "desc": ""
+      },
+      {
+        "name": "multiplier",
+        "type": "public float",
+        "desc": ""
+      }
+    ],
+    "superClass": "PlayerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "ArrowLooseEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.player.ArrowLooseEvent",
+    "desc": "ArrowLooseEvent is fired when a player stops using a bow.<br>\nThis event is fired whenever a player stops using a bow in\nBowItem#releaseUsing(ItemStack, Level, LivingEntity, int).<br>\n<br>\n#bow contains the ItemBow ItemStack that was used in this event.<br>\n#charge contains the value for how much the player had charged before stopping the shot.<br>\n<br>\nThis event is ICancellableEvent.<br>\nIf this event is canceled, the player does not stop using the bow.<br>\nFor crossbows, the charge will always be 1; Set it to -1 in order to prevent firing the arrow.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "bow",
+        "type": "public ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "level",
+        "type": "public Level",
+        "desc": ""
+      },
+      {
+        "name": "charge",
+        "type": "public int",
+        "desc": ""
+      }
+    ],
+    "superClass": "PlayerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "CanPlayerSleepEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.player.CanPlayerSleepEvent",
+    "desc": "Called from ServerPlayer#startSleepInBed(BlockPos) when a player attempts to sleep.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "entity",
+        "type": "ServerPlayer",
+        "desc": ""
+      },
+      {
+        "name": "level",
+        "type": "public Level",
+        "desc": ""
+      },
+      {
+        "name": "pos",
+        "type": "public BlockPos",
+        "desc": ""
+      },
+      {
+        "name": "state",
+        "type": "public BlockState",
+        "desc": ""
+      },
+      {
+        "name": "problem",
+        "type": "BedSleepingProblem",
+        "desc": ""
+      },
+      {
+        "name": "vanillaProblem",
+        "type": "BedSleepingProblem",
+        "desc": ""
+      }
+    ],
+    "superClass": "PlayerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "SweepAttackEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.player.SweepAttackEvent",
+    "desc": "The SweepAttackEvent is fired when a Player attacks a target, after the CriticalHitEvent has been fired.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "target",
+        "type": "Entity",
+        "desc": ""
+      },
+      {
+        "name": "vanillaSweep",
+        "type": "boolean",
+        "desc": ""
+      },
+      {
+        "name": "sweeping",
+        "type": "boolean",
+        "desc": ""
+      }
+    ],
+    "superClass": "PlayerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "PermissionsChangedEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.player.PermissionsChangedEvent",
+    "desc": "This event will fire when the player is opped or deopped.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "newLevel",
+        "type": "int",
+        "desc": ""
+      },
+      {
+        "name": "oldLevel",
+        "type": "int",
+        "desc": ""
+      }
+    ],
+    "superClass": "PlayerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "CriticalHitEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.player.CriticalHitEvent",
+    "desc": "This event is fired when a player attacks an entity in Player#attack(Entity).",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "target",
+        "type": "Entity",
+        "desc": ""
+      },
+      {
+        "name": "damageMultiplier",
+        "type": "float",
+        "desc": ""
+      },
+      {
+        "name": "criticalHit",
+        "type": "boolean",
+        "desc": ""
+      },
+      {
+        "name": "vanillaMultiplier",
+        "type": "float",
+        "desc": ""
+      },
+      {
+        "name": "vanillaCritical",
+        "type": "boolean",
+        "desc": ""
+      }
+    ],
+    "superClass": "PlayerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "BonemealEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.player.BonemealEvent",
+    "desc": "This event is called when a player attempts to use bone meal on a block.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "player",
+        "type": "Player",
+        "desc": ""
+      },
+      {
+        "name": "level",
+        "type": "Level",
+        "desc": ""
+      },
+      {
+        "name": "pos",
+        "type": "BlockPos",
+        "desc": ""
+      },
+      {
+        "name": "state",
+        "type": "BlockState",
+        "desc": ""
+      },
+      {
+        "name": "stack",
+        "type": "ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "validBonemealTarget",
+        "type": "boolean",
+        "desc": ""
+      },
+      {
+        "name": "successful",
+        "type": "boolean",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "AttackEntityEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.player.AttackEntityEvent",
+    "desc": "AttackEntityEvent is fired when a player attacks an Entity.<br>\nThis event is fired whenever a player attacks an Entity in\nPlayer#attack(Entity).<br>\n<br>\n#target contains the Entity that was damaged by the player.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "target",
+        "type": "public Entity",
+        "desc": ""
+      }
+    ],
+    "superClass": "PlayerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "PlayerSetSpawnEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.player.PlayerSetSpawnEvent",
+    "desc": "This event is fired when a player's spawn point is set or reset.<br>\nThe event can be canceled, which will prevent the spawn point from being changed.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "forced",
+        "type": "public boolean",
+        "desc": ""
+      },
+      {
+        "name": "newSpawn",
+        "type": "BlockPos",
+        "desc": ""
+      },
+      {
+        "name": "spawnLevel",
+        "type": "public ResourceKey<Level>",
+        "desc": ""
+      }
+    ],
+    "superClass": "PlayerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "PlayerHeartTypeEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.player.PlayerHeartTypeEvent",
+    "desc": "Fired by Gui.HeartType#forPlayer to allow mods to change the heart sprite which is displayed in the player's\nhealth bar.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "originalType",
+        "type": "Gui.HeartType",
+        "desc": ""
+      },
+      {
+        "name": "type",
+        "type": "Gui.HeartType",
+        "desc": ""
+      }
+    ],
+    "superClass": "PlayerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "AnvilRepairEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.player.AnvilRepairEvent",
+    "desc": "Fired when the player removes a \"repaired\" item from the Anvil's Output slot.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "output",
+        "type": "ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "left",
+        "type": "ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "right",
+        "type": "ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "breakChance",
+        "type": "public float",
+        "desc": ""
+      }
+    ],
+    "superClass": "PlayerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "PlayerWakeUpEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.player.PlayerWakeUpEvent",
+    "desc": "This event is fired when the player is waking up.<br/>\nThis is merely for purposes of listening for this to happen.<br/>\nThere is nothing that can be manipulated with this event.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [],
+    "superClass": "PlayerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "PlayerContainerEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.player.PlayerContainerEvent",
+    "desc": "",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "container",
+        "type": "public AbstractContainerMenu",
+        "desc": ""
+      }
+    ],
+    "superClass": "PlayerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "PlayerEnchantItemEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.player.PlayerEnchantItemEvent",
+    "desc": "This event fires when a player enchants an item, after IItemExtension#applyEnchantments has been called.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "enchantedItem",
+        "type": "ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "enchantments",
+        "type": "List<EnchantmentInstance>",
+        "desc": ""
+      }
+    ],
+    "superClass": "PlayerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "CanContinueSleepingEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.player.CanContinueSleepingEvent",
+    "desc": "This event is fired when the game checks if a sleeping entity may continue sleeping.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "problem",
+        "type": "BedSleepingProblem",
+        "desc": ""
+      },
+      {
+        "name": "mayContinueSleeping",
+        "type": "boolean",
+        "desc": ""
+      },
+      {
+        "name": "sleepingPos",
+        "type": "Optional<BlockPos>",
+        "desc": ""
+      }
+    ],
+    "superClass": "LivingEvent",
+    "deprecated": false
+  },
+  {
+    "name": "PlayerSpawnPhantomsEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.player.PlayerSpawnPhantomsEvent",
+    "desc": "This event is fired from PhantomSpawner#tick when phantoms would attempt to be spawned, with one event fired per player.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "phantomsToSpawn",
+        "type": "int",
+        "desc": ""
+      },
+      {
+        "name": "result",
+        "type": "Result",
+        "desc": ""
+      }
+    ],
+    "superClass": "PlayerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "UseItemOnBlockEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.player.UseItemOnBlockEvent",
+    "desc": "Fires on both the client and server thread when a player interacts with a block.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "player",
+        "type": "Player",
+        "desc": ""
+      },
+      {
+        "name": "hand",
+        "type": "InteractionHand",
+        "desc": ""
+      },
+      {
+        "name": "itemStack",
+        "type": "ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "pos",
+        "type": "BlockPos",
+        "desc": ""
+      },
+      {
+        "name": "face",
+        "type": "Direction",
+        "desc": ""
+      },
+      {
+        "name": "level",
+        "type": "Level",
+        "desc": ""
+      },
+      {
+        "name": "useOnContext",
+        "type": "UseOnContext",
+        "desc": ""
+      },
+      {
+        "name": "usePhase",
+        "type": "UsePhase",
+        "desc": ""
+      },
+      {
+        "name": "side",
+        "type": "LogicalSide",
+        "desc": ""
+      },
+      {
+        "name": "cancellationResult",
+        "type": "ItemInteractionResult",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "ItemFishedEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.player.ItemFishedEvent",
+    "desc": "This event is called when a player fishes an item.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "rodDamage",
+        "type": "int",
+        "desc": ""
+      },
+      {
+        "name": "drops",
+        "type": "NonNullList<ItemStack>",
+        "desc": ""
+      },
+      {
+        "name": "hookEntity",
+        "type": "FishingHook",
+        "desc": ""
+      }
+    ],
+    "superClass": "PlayerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "ArrowNockEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.player.ArrowNockEvent",
+    "desc": "ArrowNockEvent is fired when a player begins using a bow.<br>\nThis event is fired whenever a player begins using a bow in\nBowItem#use(Level, Player, InteractionHand).<br>\n<br>\nThis event is ICancellableEvent.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "bow",
+        "type": "public ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "level",
+        "type": "public Level",
+        "desc": ""
+      },
+      {
+        "name": "hand",
+        "type": "public InteractionHand",
+        "desc": ""
+      },
+      {
+        "name": "action",
+        "type": "public InteractionResultHolder<ItemStack>",
+        "desc": ""
+      }
+    ],
+    "superClass": "PlayerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "PlayerRespawnPositionEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.player.PlayerRespawnPositionEvent",
+    "desc": "Fired by PlayerList#respawn(ServerPlayer, boolean) before the server respawns a player.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "dimensionTransition",
+        "type": "DimensionTransition",
+        "desc": ""
+      },
+      {
+        "name": "originalDimensionTransition",
+        "type": "DimensionTransition",
+        "desc": ""
+      },
+      {
+        "name": "fromEndFight",
+        "type": "boolean",
+        "desc": ""
+      }
+    ],
+    "superClass": "PlayerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "PlayerNegotiationEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.player.PlayerNegotiationEvent",
+    "desc": "This event is fired on the server when a connection has started the Forge handshake,\nForge will wait for all enqueued work to be completed before proceeding further with the login process.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "connection",
+        "type": "public Connection",
+        "desc": ""
+      },
+      {
+        "name": "profile",
+        "type": "public GameProfile",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "EntityJoinLevelEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.EntityJoinLevelEvent",
+    "desc": "This event is fired whenever an Entity joins a Level.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "level",
+        "type": "Level",
+        "desc": ""
+      }
+    ],
+    "superClass": "EntityEvent",
+    "deprecated": false
+  },
+  {
+    "name": "EntityAttributeModificationEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.EntityAttributeModificationEvent",
+    "desc": "EntityAttributeModificationEvent.<br>\nUse this event to add attributes to existing entity types.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "types",
+        "type": "public List<EntityType<? extends LivingEntity>>",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "EntityTeleportEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.EntityTeleportEvent",
+    "desc": "EntityTeleportEvent is fired when an event involving any teleportation of an Entity occurs.<br>\nIf a method utilizes this Event as its parameter, the method will\nreceive every child event of this class.<br>\n<br>\n#getTarget() contains the target destination.<br>\n#getPrev() contains the entity's current position.<br>\n<br>\nAll children of this event are fired on the NeoForge#EVENT_BUS.<br>",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "targetX",
+        "type": "double",
+        "desc": ""
+      },
+      {
+        "name": "targetY",
+        "type": "double",
+        "desc": ""
+      },
+      {
+        "name": "targetZ",
+        "type": "double",
+        "desc": ""
+      },
+      {
+        "name": "target",
+        "type": "public Vec3",
+        "desc": ""
+      },
+      {
+        "name": "prevX",
+        "type": "public double",
+        "desc": ""
+      },
+      {
+        "name": "prevY",
+        "type": "public double",
+        "desc": ""
+      },
+      {
+        "name": "prevZ",
+        "type": "public double",
+        "desc": ""
+      },
+      {
+        "name": "prev",
+        "type": "public Vec3",
+        "desc": ""
+      },
+      {
+        "name": "entityLiving",
+        "type": "public LivingEntity",
+        "desc": ""
+      },
+      {
+        "name": "pearlEntity",
+        "type": "public ThrownEnderpearl",
+        "desc": ""
+      },
+      {
+        "name": "player",
+        "type": "public ServerPlayer",
+        "desc": ""
+      },
+      {
+        "name": "hitResult",
+        "type": "HitResult",
+        "desc": ""
+      },
+      {
+        "name": "attackDamage",
+        "type": "public float",
+        "desc": ""
+      }
+    ],
+    "superClass": "EntityEvent",
+    "deprecated": false
+  },
+  {
+    "name": "EntityInvulnerabilityCheckEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.EntityInvulnerabilityCheckEvent",
+    "desc": "Fired when Entity#isInvulnerableTo(DamageSource) is invoked and determines if\ndownstream hurt logic should apply.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "invulnerable",
+        "type": "boolean",
+        "desc": ""
+      },
+      {
+        "name": "source",
+        "type": "DamageSource",
+        "desc": ""
+      },
+      {
+        "name": "originalInvulnerability",
+        "type": "boolean",
+        "desc": ""
+      }
+    ],
+    "superClass": "EntityEvent",
+    "deprecated": false
+  },
+  {
+    "name": "EntityMountEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.EntityMountEvent",
+    "desc": "This event gets fired whenever a entity mounts/dismounts another entity.<br>\n<b>entityBeingMounted can be null</b>, be sure to check for that.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "mounting",
+        "type": "public boolean",
+        "desc": ""
+      },
+      {
+        "name": "dismounting",
+        "type": "public boolean",
+        "desc": ""
+      },
+      {
+        "name": "entityMounting",
+        "type": "public Entity",
+        "desc": ""
+      },
+      {
+        "name": "entityBeingMounted",
+        "type": "public Entity",
+        "desc": ""
+      },
+      {
+        "name": "level",
+        "type": "public Level",
+        "desc": ""
+      }
+    ],
+    "superClass": "EntityEvent",
+    "deprecated": false
+  },
+  {
+    "name": "EntityTravelToDimensionEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.EntityTravelToDimensionEvent",
+    "desc": "EntityTravelToDimensionEvent is fired before an Entity travels to a dimension.<br>\n<br>\n#dimension contains the id of the dimension the entity is traveling to.<br>\n<br>\nThis event is net.neoforged.bus.api.ICancellableEvent.<br>\nIf this event is canceled, the Entity does not travel to the dimension.<br>\n<br>\nThis event does not have a result.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "dimension",
+        "type": "public ResourceKey<Level>",
+        "desc": ""
+      }
+    ],
+    "superClass": "EntityEvent",
+    "deprecated": false
+  },
+  {
+    "name": "EntityMobGriefingEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.EntityMobGriefingEvent",
+    "desc": "EntityMobGriefingEvent is fired when mob griefing is about to occur and allows an event listener to specify whether it should or not.<br>\nThis event is fired when ever the GameRules#RULE_MOBGRIEFING mob griefing game rule is checked.<br>",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "mobGriefingEnabled",
+        "type": "boolean",
+        "desc": ""
+      }
+    ],
+    "superClass": "EntityEvent",
+    "deprecated": false
+  },
+  {
+    "name": "EntityAttributeCreationEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent",
+    "desc": "EntityAttributeCreationEvent.<br>\nUse this event to register attributes for your own EntityTypes.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "LivingKnockBackEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.living.LivingKnockBackEvent",
+    "desc": "LivingKnockBackEvent is fired when a living entity is about to be knocked back.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "strength",
+        "type": "float",
+        "desc": ""
+      },
+      {
+        "name": "ratioZ",
+        "type": "double ratioX,",
+        "desc": ""
+      },
+      {
+        "name": "originalStrength",
+        "type": "float",
+        "desc": ""
+      },
+      {
+        "name": "originalRatioZ",
+        "type": "double originalRatioX,",
+        "desc": ""
+      },
+      {
+        "name": "ratioX",
+        "type": "public double",
+        "desc": ""
+      },
+      {
+        "name": "originalRatioX",
+        "type": "public double",
+        "desc": ""
+      }
+    ],
+    "superClass": "LivingEvent",
+    "deprecated": false
+  },
+  {
+    "name": "LivingGetProjectileEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.living.LivingGetProjectileEvent",
+    "desc": "This event is fired when a living entity attempts to get a projectile with the\nLivingEntity#getProjectile(ItemStack) method.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "projectileWeaponItemStack",
+        "type": "ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "projectileItemStack",
+        "type": "ItemStack",
+        "desc": ""
+      }
+    ],
+    "superClass": "LivingEvent",
+    "deprecated": false
+  },
+  {
+    "name": "LivingExperienceDropEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.living.LivingExperienceDropEvent",
+    "desc": "Event for when an entity drops experience on its death, can be used to change\nthe amount of experience points dropped or completely prevent dropping of experience\nby canceling the event.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "droppedExperience",
+        "type": "public int",
+        "desc": ""
+      },
+      {
+        "name": "attackingPlayer",
+        "type": "Player",
+        "desc": ""
+      },
+      {
+        "name": "originalExperience",
+        "type": "public int",
+        "desc": ""
+      }
+    ],
+    "superClass": "LivingEvent",
+    "deprecated": false
+  },
+  {
+    "name": "LivingDrownEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.living.LivingDrownEvent",
+    "desc": "LivingDrownEvent is fired whenever a living entity can't breathe and its air supply is less than or equal to zero.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "drowning",
+        "type": "boolean",
+        "desc": ""
+      },
+      {
+        "name": "damageAmount",
+        "type": "float",
+        "desc": ""
+      },
+      {
+        "name": "bubbleCount",
+        "type": "int",
+        "desc": ""
+      }
+    ],
+    "superClass": "LivingEvent",
+    "deprecated": false
+  },
+  {
+    "name": "SpawnClusterSizeEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.living.SpawnClusterSizeEvent",
+    "desc": "This event is fired from NaturalSpawner#spawnCategoryForPosition when the spawning\nsystem determines the maximum amount of the selected entity that can spawn at the same time.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "size",
+        "type": "int",
+        "desc": ""
+      },
+      {
+        "name": "entity",
+        "type": "Mob",
+        "desc": ""
+      }
+    ],
+    "superClass": "LivingEvent",
+    "deprecated": false
+  },
+  {
+    "name": "LivingBreatheEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.living.LivingBreatheEvent",
+    "desc": "LivingBreatheEvent is fired whenever a living entity ticks.<br>\n<br>\nThis event is fired via CommonHooks#onLivingBreathe(LivingEntity, int, int).<br>\n<br>\nThis event is not ICancellableEvent.<br>\n<br>\nThis event does not have a result.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "consumeAirAmount",
+        "type": "int",
+        "desc": ""
+      },
+      {
+        "name": "refillAirAmount",
+        "type": "int",
+        "desc": ""
+      }
+    ],
+    "superClass": "LivingEvent",
+    "deprecated": false
+  },
+  {
+    "name": "LivingDeathEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.living.LivingDeathEvent",
+    "desc": "LivingDeathEvent is fired when an Entity dies.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "source",
+        "type": "public DamageSource",
+        "desc": ""
+      }
+    ],
+    "superClass": "LivingEvent",
+    "deprecated": false
+  },
+  {
+    "name": "EnderManAngerEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.living.EnderManAngerEvent",
+    "desc": "This event is fired on the forge bus before an Enderman detects that a player is looking at them.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "player",
+        "type": "Player",
+        "desc": ""
+      },
+      {
+        "name": "entity",
+        "type": "EnderMan",
+        "desc": ""
+      }
+    ],
+    "superClass": "LivingEvent",
+    "deprecated": false
+  },
+  {
+    "name": "LivingDropsEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.living.LivingDropsEvent",
+    "desc": "LivingDropsEvent is fired when an Entity's death causes dropped items to appear.<br>\nThis event is fired whenever an Entity dies and drops items in\nLivingEntity#die(DamageSource).<br>\n<br>\nThis event is fired via the CommonHooks#onLivingDrops(LivingEntity, DamageSource, Collection, int, boolean) .<br>\n<br>\n#source contains the DamageSource that caused the drop to occur.<br>\n#drops contains the ArrayList of EntityItems that will be dropped.<br>\n#lootingLevel contains the amount of loot that will be dropped.<br>\n#recentlyHit determines whether the Entity doing the drop has recently been damaged.<br>\n<br>\nThis event is ICancellableEvent.<br>\nIf this event is canceled, the Entity does not drop anything.<br>\n<br>\nThis event does not have a result.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "source",
+        "type": "public DamageSource",
+        "desc": ""
+      },
+      {
+        "name": "drops",
+        "type": "public Collection<ItemEntity>",
+        "desc": ""
+      },
+      {
+        "name": "recentlyHit",
+        "type": "public boolean",
+        "desc": ""
+      }
+    ],
+    "superClass": "LivingEvent",
+    "deprecated": false
+  },
+  {
+    "name": "ArmorHurtEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.living.ArmorHurtEvent",
+    "desc": "Fired on both sides when a LivingEntity's armor is dealt damage in\nLivingEntity#doHurtEquipment(DamageSource, float, EquipmentSlot...) doHurtEquipment.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "armorItemStack",
+        "type": "ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "originalDamage",
+        "type": "float",
+        "desc": ""
+      },
+      {
+        "name": "newDamage",
+        "type": "float",
+        "desc": ""
+      },
+      {
+        "name": "armorMap",
+        "type": "Map<EquipmentSlot, ArmorEntry>",
+        "desc": ""
+      }
+    ],
+    "superClass": "LivingEvent",
+    "deprecated": false
+  },
+  {
+    "name": "LivingUseTotemEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.living.LivingUseTotemEvent",
+    "desc": "Fired when an Entity attempts to use a totem to prevent its death.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "source",
+        "type": "DamageSource",
+        "desc": ""
+      },
+      {
+        "name": "totem",
+        "type": "ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "handHolding",
+        "type": "InteractionHand",
+        "desc": ""
+      }
+    ],
+    "superClass": "LivingEvent",
+    "deprecated": false
+  },
+  {
+    "name": "LivingDestroyBlockEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.living.LivingDestroyBlockEvent",
+    "desc": "Fired when the ender dragon or wither attempts to destroy a block and when ever a zombie attempts to break a door.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "state",
+        "type": "public BlockState",
+        "desc": ""
+      },
+      {
+        "name": "pos",
+        "type": "public BlockPos",
+        "desc": ""
+      }
+    ],
+    "superClass": "LivingEvent",
+    "deprecated": false
+  },
+  {
+    "name": "LivingHealEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.living.LivingHealEvent",
+    "desc": "LivingHealEvent is fired when an Entity is set to be healed.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "amount",
+        "type": "public float",
+        "desc": ""
+      }
+    ],
+    "superClass": "LivingEvent",
+    "deprecated": false
+  },
+  {
+    "name": "LivingFallEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.living.LivingFallEvent",
+    "desc": "LivingFallEvent is fired when an Entity is set to be falling.<br>\nThis event is fired whenever an Entity is set to fall in\nLivingEntity#causeFallDamage(float, float, DamageSource).<br>\n<br>\nThis event is fired via the CommonHooks#onLivingFall(LivingEntity, float, float).<br>\n<br>\n#distance contains the distance the Entity is to fall.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "distance",
+        "type": "public float",
+        "desc": ""
+      },
+      {
+        "name": "damageMultiplier",
+        "type": "public float",
+        "desc": ""
+      }
+    ],
+    "superClass": "LivingEvent",
+    "deprecated": false
+  },
+  {
+    "name": "LivingEquipmentChangeEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.living.LivingEquipmentChangeEvent",
+    "desc": "LivingEquipmentChangeEvent is fired when the Equipment of a Entity changes.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "slot",
+        "type": "public EquipmentSlot",
+        "desc": ""
+      },
+      {
+        "name": "from",
+        "type": "public ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "to",
+        "type": "public ItemStack",
+        "desc": ""
+      }
+    ],
+    "superClass": "LivingEvent",
+    "deprecated": false
+  },
+  {
+    "name": "LivingIncomingDamageEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent",
+    "desc": "LivingIncomingDamageEvent is fired when a LivingEntity is about to receive damage.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "container",
+        "type": "DamageContainer",
+        "desc": ""
+      },
+      {
+        "name": "source",
+        "type": "DamageSource",
+        "desc": ""
+      },
+      {
+        "name": "amount",
+        "type": "float",
+        "desc": ""
+      },
+      {
+        "name": "originalAmount",
+        "type": "float",
+        "desc": ""
+      }
+    ],
+    "superClass": "LivingEvent",
+    "deprecated": false
+  },
+  {
+    "name": "AnimalTameEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.living.AnimalTameEvent",
+    "desc": "This event is fired when an Animal is tamed.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "animal",
+        "type": "public Animal",
+        "desc": ""
+      },
+      {
+        "name": "tamer",
+        "type": "public Player",
+        "desc": ""
+      }
+    ],
+    "superClass": "LivingEvent",
+    "deprecated": false
+  },
+  {
+    "name": "LivingEntityUseItemEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.living.LivingEntityUseItemEvent",
+    "desc": "",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "item",
+        "type": "public ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "duration",
+        "type": "public int",
+        "desc": ""
+      },
+      {
+        "name": "resultStack",
+        "type": "public ItemStack",
+        "desc": ""
+      }
+    ],
+    "superClass": "LivingEvent",
+    "deprecated": false
+  },
+  {
+    "name": "LivingChangeTargetEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.living.LivingChangeTargetEvent",
+    "desc": "This event allows you to change the target an entity has.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "newAboutToBeSetTarget",
+        "type": "LivingEntity",
+        "desc": ""
+      },
+      {
+        "name": "targetType",
+        "type": "ILivingTargetType",
+        "desc": ""
+      },
+      {
+        "name": "originalAboutToBeSetTarget",
+        "type": "LivingEntity",
+        "desc": ""
+      }
+    ],
+    "superClass": "LivingEvent",
+    "deprecated": false
+  },
+  {
+    "name": "BabyEntitySpawnEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.living.BabyEntitySpawnEvent",
+    "desc": "BabyEntitySpawnEvent is fired just before a baby entity is about to be spawned.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "parentA",
+        "type": "public Mob",
+        "desc": ""
+      },
+      {
+        "name": "parentB",
+        "type": "public Mob",
+        "desc": ""
+      },
+      {
+        "name": "causedByPlayer",
+        "type": "Player",
+        "desc": ""
+      },
+      {
+        "name": "child",
+        "type": "AgeableMob",
+        "desc": ""
+      }
+    ],
+    "superClass": "net.neoforged.bus.api.Event",
+    "deprecated": false
+  },
+  {
+    "name": "EffectParticleModificationEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.living.EffectParticleModificationEvent",
+    "desc": "Fires for each effect to allow modification or replacement of the particle options (you can set it to null to reset it to default).",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "effect",
+        "type": "public MobEffectInstance",
+        "desc": ""
+      },
+      {
+        "name": "originalParticleOptions",
+        "type": "public ParticleOptions",
+        "desc": ""
+      },
+      {
+        "name": "particleOptions",
+        "type": "public ParticleOptions",
+        "desc": ""
+      },
+      {
+        "name": "visible",
+        "type": "public boolean",
+        "desc": ""
+      }
+    ],
+    "superClass": "LivingEvent",
+    "deprecated": false
+  },
+  {
+    "name": "LivingShieldBlockEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.living.LivingShieldBlockEvent",
+    "desc": "LivingShieldBlockEvent is fired when an entity is hurt and vanilla checks if the entity is attempting\nto block with a shield.<br>\nCancelling this event will have the same impact as if the shield was not eligible to block.<br>\nThe damage blocked cannot be set lower than zero or greater than the original value.<br>\n<h4>Note: This event fires whether the player is actively using a shield or not.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "damageContainer",
+        "type": "public DamageContainer",
+        "desc": ""
+      },
+      {
+        "name": "damageSource",
+        "type": "DamageSource",
+        "desc": ""
+      },
+      {
+        "name": "originalBlockedDamage",
+        "type": "float",
+        "desc": ""
+      },
+      {
+        "name": "blockedDamage",
+        "type": "float",
+        "desc": ""
+      },
+      {
+        "name": "originalBlock",
+        "type": "boolean",
+        "desc": ""
+      },
+      {
+        "name": "blocked",
+        "type": "boolean",
+        "desc": ""
+      }
+    ],
+    "superClass": "LivingEvent",
+    "deprecated": false
+  },
+  {
+    "name": "MobSplitEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.living.MobSplitEvent",
+    "desc": "This event is fired whenever a mob is removed and splits into multiple children.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "parent",
+        "type": "Mob",
+        "desc": ""
+      },
+      {
+        "name": "children",
+        "type": "List<Mob>",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "FinalizeSpawnEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.living.FinalizeSpawnEvent",
+    "desc": "This event is fired before Mob#finalizeSpawn is called.<br>\nThis allows mods to control mob initialization.<br>\nIn vanilla code, this event is injected by a transformer and not via patch, so calls cannot be traced via call hierarchy (it is not source-visible).",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "difficulty",
+        "type": "DifficultyInstance",
+        "desc": ""
+      },
+      {
+        "name": "spawnType",
+        "type": "MobSpawnType",
+        "desc": ""
+      },
+      {
+        "name": "spawnData",
+        "type": "SpawnGroupData",
+        "desc": ""
+      },
+      {
+        "name": "spawner",
+        "type": "Either<BlockEntity, Entity>",
+        "desc": ""
+      },
+      {
+        "name": "spawnCancelled",
+        "type": "boolean",
+        "desc": ""
+      }
+    ],
+    "superClass": "MobSpawnEvent",
+    "deprecated": false
+  },
+  {
+    "name": "MobDespawnEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.living.MobDespawnEvent",
+    "desc": "This event is fired from Mob#checkDespawn().<br>\nIt fires once per tick per mob that is attempting to despawn.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "result",
+        "type": "Result",
+        "desc": ""
+      }
+    ],
+    "superClass": "MobSpawnEvent",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterSpawnPlacementsEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent",
+    "desc": "This event allows each EntityType to have a SpawnPlacements.SpawnPredicate registered or modified.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "spawnType",
+        "type": "public SpawnPlacementType",
+        "desc": ""
+      },
+      {
+        "name": "heightmapType",
+        "type": "public Heightmap.Types",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "PlayLevelSoundEvent",
+    "fullPath": "net.neoforged.neoforge.event.PlayLevelSoundEvent",
+    "desc": "PlayLevelSoundEvent is fired when a sound is played on a Level.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "level",
+        "type": "Level",
+        "desc": ""
+      },
+      {
+        "name": "sound",
+        "type": "Holder<SoundEvent>",
+        "desc": ""
+      },
+      {
+        "name": "source",
+        "type": "SoundSource",
+        "desc": ""
+      },
+      {
+        "name": "originalVolume",
+        "type": "float",
+        "desc": ""
+      },
+      {
+        "name": "originalPitch",
+        "type": "float",
+        "desc": ""
+      },
+      {
+        "name": "newVolume",
+        "type": "float",
+        "desc": ""
+      },
+      {
+        "name": "newPitch",
+        "type": "float",
+        "desc": ""
+      },
+      {
+        "name": "entity",
+        "type": "Entity",
+        "desc": ""
+      },
+      {
+        "name": "position",
+        "type": "Vec3",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "FurnaceFuelBurnTimeEvent",
+    "fullPath": "net.neoforged.neoforge.event.furnace.FurnaceFuelBurnTimeEvent",
+    "desc": "FurnaceFuelBurnTimeEvent is fired when determining the fuel value for an ItemStack.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "itemStack",
+        "type": "ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "recipeType",
+        "type": "RecipeType<?>",
+        "desc": ""
+      },
+      {
+        "name": "burnTime",
+        "type": "int",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "LootTableLoadEvent",
+    "fullPath": "net.neoforged.neoforge.event.LootTableLoadEvent",
+    "desc": "Fired when a LootTable is loaded from JSON.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "name",
+        "type": "public ResourceLocation",
+        "desc": ""
+      },
+      {
+        "name": "table",
+        "type": "public LootTable",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterCommandsEvent",
+    "fullPath": "net.neoforged.neoforge.event.RegisterCommandsEvent",
+    "desc": "Commands are rebuilt whenever ReloadableServerResources is recreated.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "dispatcher",
+        "type": "CommandDispatcher<CommandSourceStack>",
+        "desc": ""
+      },
+      {
+        "name": "commandSelection",
+        "type": "Commands.CommandSelection",
+        "desc": ""
+      },
+      {
+        "name": "buildContext",
+        "type": "CommandBuildContext",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "ItemAttributeModifierEvent",
+    "fullPath": "net.neoforged.neoforge.event.ItemAttributeModifierEvent",
+    "desc": "This event is fired when the attributes for an item stack are queried (for any reason) through ItemStack#getAttributeModifiers().",
+    "category": "events",
+    "cancelable": false,
+    "bus": "MOD",
+    "fields": [
+      {
+        "name": "itemStack",
+        "type": "ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "defaultModifiers",
+        "type": "ItemAttributeModifiers",
+        "desc": ""
+      },
+      {
+        "name": "modifiers",
+        "type": "List<ItemAttributeModifiers.Entry>",
+        "desc": ""
+      },
+      {
+        "name": "builder",
+        "type": "private ItemAttributeModifiersBuilder",
+        "desc": ""
+      },
+      {
+        "name": "entryView",
+        "type": "List<ItemAttributeModifiers.Entry>",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "TagsUpdatedEvent",
+    "fullPath": "net.neoforged.neoforge.event.TagsUpdatedEvent",
+    "desc": "Fired when tags are updated on either server or client.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "registryAccess",
+        "type": "RegistryAccess",
+        "desc": ""
+      },
+      {
+        "name": "updateCause",
+        "type": "UpdateCause",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "ExplosionKnockbackEvent",
+    "fullPath": "net.neoforged.neoforge.event.level.ExplosionKnockbackEvent",
+    "desc": "ExplosionKnockbackEvent is fired once the explosion has calculated the knockback velocity to add to the entity caught in blast.<br>\n<br>\nThis event is not ICancellableEvent.<br>\nThis event does not use HasResult.<br>\nThis event is fired on the NeoForge#EVENT_BUS.<br>",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "affectedBlocks",
+        "type": "List<BlockPos>",
+        "desc": ""
+      },
+      {
+        "name": "affectedEntity",
+        "type": "Entity",
+        "desc": ""
+      },
+      {
+        "name": "knockbackVelocity",
+        "type": "Vec3",
+        "desc": ""
+      }
+    ],
+    "superClass": "ExplosionEvent",
+    "deprecated": false
+  },
+  {
+    "name": "BlockGrowFeatureEvent",
+    "fullPath": "net.neoforged.neoforge.event.level.BlockGrowFeatureEvent",
+    "desc": "This event is fired whenever a block (like a sapling) grows into a feature (like a tree).",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "random",
+        "type": "RandomSource",
+        "desc": ""
+      },
+      {
+        "name": "pos",
+        "type": "BlockPos",
+        "desc": ""
+      },
+      {
+        "name": "feature",
+        "type": "Holder<ConfiguredFeature<?, ?>>",
+        "desc": ""
+      }
+    ],
+    "superClass": "LevelEvent",
+    "deprecated": false
+  },
+  {
+    "name": "BlockDropsEvent",
+    "fullPath": "net.neoforged.neoforge.event.level.BlockDropsEvent",
+    "desc": "Fired when a block is broken and the drops have been determined, but before they have been added to the world.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "drops",
+        "type": "List<ItemEntity>",
+        "desc": ""
+      },
+      {
+        "name": "blockEntity",
+        "type": "BlockEntity",
+        "desc": ""
+      },
+      {
+        "name": "breaker",
+        "type": "Entity",
+        "desc": ""
+      },
+      {
+        "name": "tool",
+        "type": "ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "level",
+        "type": "ServerLevel",
+        "desc": ""
+      },
+      {
+        "name": "droppedExperience",
+        "type": "int",
+        "desc": ""
+      }
+    ],
+    "superClass": "BlockEvent",
+    "deprecated": false
+  },
+  {
+    "name": "CreateFluidSourceEvent",
+    "fullPath": "net.neoforged.neoforge.event.level.block.CreateFluidSourceEvent",
+    "desc": "Fired when a fluid checks if nearby blocks can convert it to a source block.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "level",
+        "type": "Level",
+        "desc": ""
+      },
+      {
+        "name": "fluidState",
+        "type": "public FluidState",
+        "desc": ""
+      },
+      {
+        "name": "vanillaResult",
+        "type": "boolean",
+        "desc": ""
+      }
+    ],
+    "superClass": "BlockEvent",
+    "deprecated": false
+  },
+  {
+    "name": "ModifyCustomSpawnersEvent",
+    "fullPath": "net.neoforged.neoforge.event.level.ModifyCustomSpawnersEvent",
+    "desc": "This event is fired on the net.neoforged.fml.LogicalSide#SERVER logical server when a ServerLevel is building its CustomSpawner custom spawners.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "level",
+        "type": "ServerLevel",
+        "desc": ""
+      },
+      {
+        "name": "customSpawners",
+        "type": "List<CustomSpawner>",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "ChunkTicketLevelUpdatedEvent",
+    "fullPath": "net.neoforged.neoforge.event.level.ChunkTicketLevelUpdatedEvent",
+    "desc": "This event is fired whenever a chunk has its ticket level changed via the server's ChunkMap.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "level",
+        "type": "ServerLevel",
+        "desc": ""
+      },
+      {
+        "name": "chunkPos",
+        "type": "long",
+        "desc": ""
+      },
+      {
+        "name": "oldTicketLevel",
+        "type": "int",
+        "desc": ""
+      },
+      {
+        "name": "newTicketLevel",
+        "type": "int",
+        "desc": ""
+      },
+      {
+        "name": "chunkHolder",
+        "type": "ChunkHolder",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "AlterGroundEvent",
+    "fullPath": "net.neoforged.neoforge.event.level.AlterGroundEvent",
+    "desc": "This event is fired when AlterGroundDecorator#placeBlockAt(TreeDecorator.Context, BlockPos) attempts to alter a ground block when generating a feature.<br>\nAn example of this would be large spruce trees converting grass blocks into podzol.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "context",
+        "type": "TreeDecorator.Context",
+        "desc": ""
+      },
+      {
+        "name": "positions",
+        "type": "List<BlockPos>",
+        "desc": ""
+      },
+      {
+        "name": "stateProvider",
+        "type": "StateProvider",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "SleepFinishedTimeEvent",
+    "fullPath": "net.neoforged.neoforge.event.level.SleepFinishedTimeEvent",
+    "desc": "This event is fired when all players are asleep and the time should be set to day.<br>\nsetWakeUpTime(wakeUpTime) sets a new time that will be added to the dayTime.<br>",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "newTime",
+        "type": "long",
+        "desc": ""
+      }
+    ],
+    "superClass": "LevelEvent",
+    "deprecated": false
+  },
+  {
+    "name": "GameShuttingDownEvent",
+    "fullPath": "net.neoforged.neoforge.event.GameShuttingDownEvent",
+    "desc": "A simple marker event that notifies when the game is about to close.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterGameTestsEvent",
+    "fullPath": "net.neoforged.neoforge.event.RegisterGameTestsEvent",
+    "desc": "Game tests are registered on client or server startup.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "StatAwardEvent",
+    "fullPath": "net.neoforged.neoforge.event.StatAwardEvent",
+    "desc": "Fired when a Player is awarded a Stat.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "stat",
+        "type": "Stat<?>",
+        "desc": ""
+      },
+      {
+        "name": "value",
+        "type": "int",
+        "desc": ""
+      }
+    ],
+    "superClass": "PlayerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "OnDatapackSyncEvent",
+    "fullPath": "net.neoforged.neoforge.event.OnDatapackSyncEvent",
+    "desc": "Fires when a player joins the server or when the reload command is ran,\nbefore tags and crafting recipes are sent to the client.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "playerList",
+        "type": "PlayerList",
+        "desc": ""
+      },
+      {
+        "name": "relevantPlayers",
+        "type": "Stream<ServerPlayer>",
+        "desc": ""
+      },
+      {
+        "name": "player",
+        "type": "ServerPlayer",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "ItemStackedOnOtherEvent",
+    "fullPath": "net.neoforged.neoforge.event.ItemStackedOnOtherEvent",
+    "desc": "This event provides the functionality of the pair of functions used for the Bundle, in one event:\n<ul>\n<li>Item#overrideOtherStackedOnMe(ItemStack, ItemStack, Slot, ClickAction, Player, SlotAccess)</li>\n<li>Item#overrideStackedOnOther(ItemStack, Slot, ClickAction, Player)</li>\n</ul>\nThis event is fired before either of the above are called, when a carried item is clicked on top of another in a GUI slot.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "carriedItem",
+        "type": "ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "stackedOnItem",
+        "type": "ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "slot",
+        "type": "Slot",
+        "desc": ""
+      },
+      {
+        "name": "clickAction",
+        "type": "ClickAction",
+        "desc": ""
+      },
+      {
+        "name": "player",
+        "type": "Player",
+        "desc": ""
+      },
+      {
+        "name": "carriedSlotAccess",
+        "type": "SlotAccess",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "ServerStoppingEvent",
+    "fullPath": "net.neoforged.neoforge.event.server.ServerStoppingEvent",
+    "desc": "Called when the server begins an orderly shutdown, before ServerStoppedEvent.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [],
+    "superClass": "ServerLifecycleEvent",
+    "deprecated": false
+  },
+  {
+    "name": "ServerStoppedEvent",
+    "fullPath": "net.neoforged.neoforge.event.server.ServerStoppedEvent",
+    "desc": "Called after ServerStoppingEvent when the server has completely shut down.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [],
+    "superClass": "ServerLifecycleEvent",
+    "deprecated": false
+  },
+  {
+    "name": "ServerAboutToStartEvent",
+    "fullPath": "net.neoforged.neoforge.event.server.ServerAboutToStartEvent",
+    "desc": "Called before the server begins loading anything.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [],
+    "superClass": "ServerLifecycleEvent",
+    "deprecated": false
+  },
+  {
+    "name": "ServerStartingEvent",
+    "fullPath": "net.neoforged.neoforge.event.server.ServerStartingEvent",
+    "desc": "Called after ServerAboutToStartEvent and before ServerStartedEvent.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [],
+    "superClass": "ServerLifecycleEvent",
+    "deprecated": false
+  },
+  {
+    "name": "ServerStartedEvent",
+    "fullPath": "net.neoforged.neoforge.event.server.ServerStartedEvent",
+    "desc": "Called after ServerStartingEvent when the server is available and ready to play.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [],
+    "superClass": "ServerLifecycleEvent",
+    "deprecated": false
+  },
+  {
+    "name": "DifficultyChangeEvent",
+    "fullPath": "net.neoforged.neoforge.event.DifficultyChangeEvent",
+    "desc": "DifficultyChangeEvent is fired when difficulty is changing.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "difficulty",
+        "type": "public Difficulty",
+        "desc": ""
+      },
+      {
+        "name": "oldDifficulty",
+        "type": "public Difficulty",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "EnchantmentLevelSetEvent",
+    "fullPath": "net.neoforged.neoforge.event.enchanting.EnchantmentLevelSetEvent",
+    "desc": "Fired when the enchantment level is set for each of the three potential enchantments in the enchanting table.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "level",
+        "type": "Level",
+        "desc": ""
+      },
+      {
+        "name": "pos",
+        "type": "BlockPos",
+        "desc": ""
+      },
+      {
+        "name": "enchantRow",
+        "type": "int",
+        "desc": ""
+      },
+      {
+        "name": "power",
+        "type": "int",
+        "desc": ""
+      },
+      {
+        "name": "item",
+        "type": "ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "originalLevel",
+        "type": "int",
+        "desc": ""
+      },
+      {
+        "name": "enchantLevel",
+        "type": "int",
+        "desc": ""
+      }
+    ],
+    "superClass": "net.neoforged.bus.api.Event",
+    "deprecated": false
+  },
+  {
+    "name": "GetEnchantmentLevelEvent",
+    "fullPath": "net.neoforged.neoforge.event.enchanting.GetEnchantmentLevelEvent",
+    "desc": "This event is fired whenever the enchantment level of a particular item is requested for gameplay purposes.<br>\nIt is called from IItemStackExtension#getEnchantmentLevel(Enchantment) and IItemStackExtension#getAllEnchantments().",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "stack",
+        "type": "ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "enchantments",
+        "type": "ItemEnchantments.Mutable",
+        "desc": ""
+      },
+      {
+        "name": "targetEnchant",
+        "type": "Holder<Enchantment>",
+        "desc": ""
+      },
+      {
+        "name": "lookup",
+        "type": "RegistryLookup<Enchantment>",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "CommandEvent",
+    "fullPath": "net.neoforged.neoforge.event.CommandEvent",
+    "desc": "CommandEvent is fired after a command is parsed, but before it is executed.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "parseResults",
+        "type": "ParseResults<CommandSourceStack>",
+        "desc": ""
+      },
+      {
+        "name": "exception",
+        "type": "Throwable",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "ModMismatchEvent",
+    "fullPath": "net.neoforged.neoforge.event.ModMismatchEvent",
+    "desc": "Fires when the mod loader is in the process of loading a world that was last saved\nwith mod versions that differ from the currently-loaded versions.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "levelDirectory",
+        "type": "LevelStorageSource.LevelDirectory",
+        "desc": ""
+      },
+      {
+        "name": "unresolved",
+        "type": "public Stream<MismatchResolutionResult>",
+        "desc": ""
+      },
+      {
+        "name": "resolved",
+        "type": "public Stream<MismatchResolutionResult>",
+        "desc": ""
+      },
+      {
+        "name": "missing",
+        "type": "public boolean",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterStructureConversionsEvent",
+    "fullPath": "net.neoforged.neoforge.event.RegisterStructureConversionsEvent",
+    "desc": "Fired for registering structure conversions for pre-1.18.2 worlds.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "VanillaGameEvent",
+    "fullPath": "net.neoforged.neoforge.event.VanillaGameEvent",
+    "desc": "VanillaGameEvent is fired on the server whenever one of Vanilla's GameEvent GameEvents fire.",
+    "category": "events",
+    "cancelable": true,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "level",
+        "type": "Level",
+        "desc": ""
+      },
+      {
+        "name": "cause",
+        "type": "Entity",
+        "desc": ""
+      },
+      {
+        "name": "vanillaEvent",
+        "type": "Holder<GameEvent>",
+        "desc": ""
+      },
+      {
+        "name": "eventPosition",
+        "type": "Vec3",
+        "desc": ""
+      },
+      {
+        "name": "context",
+        "type": "GameEvent.Context",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterBrewingRecipesEvent",
+    "fullPath": "net.neoforged.neoforge.event.brewing.RegisterBrewingRecipesEvent",
+    "desc": "Event to register new brewing recipes.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "builder",
+        "type": "public PotionBrewing.Builder",
+        "desc": ""
+      },
+      {
+        "name": "registryAccess",
+        "type": "public RegistryAccess",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "PlayerBrewedPotionEvent",
+    "fullPath": "net.neoforged.neoforge.event.brewing.PlayerBrewedPotionEvent",
+    "desc": "This event is called when a player picks up a potion from a brewing stand.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "stack",
+        "type": "ItemStack",
+        "desc": ""
+      }
+    ],
+    "superClass": "PlayerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "AddPackFindersEvent",
+    "fullPath": "net.neoforged.neoforge.event.AddPackFindersEvent",
+    "desc": "Fired on PackRepository creation to allow mods to add new pack finders.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "packType",
+        "type": "PackType",
+        "desc": ""
+      },
+      {
+        "name": "trusted",
+        "type": "boolean",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "XpOrbTargetingEvent",
+    "fullPath": "net.neoforged.neoforge.entity.XpOrbTargetingEvent",
+    "desc": "Event to determine which player an XP Orb should follow.",
+    "category": "entities",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "xpOrb",
+        "type": "ExperienceOrb",
+        "desc": ""
+      },
+      {
+        "name": "scanDistance",
+        "type": "double",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RenderHandEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RenderHandEvent",
+    "desc": "Fired before a hand is rendered in the first person view.",
+    "category": "client",
+    "cancelable": true,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "hand",
+        "type": "InteractionHand",
+        "desc": ""
+      },
+      {
+        "name": "poseStack",
+        "type": "PoseStack",
+        "desc": ""
+      },
+      {
+        "name": "multiBufferSource",
+        "type": "MultiBufferSource",
+        "desc": ""
+      },
+      {
+        "name": "packedLight",
+        "type": "int",
+        "desc": ""
+      },
+      {
+        "name": "partialTick",
+        "type": "float",
+        "desc": ""
+      },
+      {
+        "name": "interpolatedPitch",
+        "type": "float",
+        "desc": ""
+      },
+      {
+        "name": "swingProgress",
+        "type": "float",
+        "desc": ""
+      },
+      {
+        "name": "equipProgress",
+        "type": "float",
+        "desc": ""
+      },
+      {
+        "name": "itemStack",
+        "type": "ItemStack",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterDimensionSpecialEffectsEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterDimensionSpecialEffectsEvent",
+    "desc": "Allows users to register custom DimensionSpecialEffects for their dimensions.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterShadersEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterShadersEvent",
+    "desc": "Fired to allow mods to register custom ShaderInstance shaders.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "resourceProvider",
+        "type": "ResourceProvider",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "ClientChatEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.ClientChatEvent",
+    "desc": "Fired when the client is about to send a chat message to the server.",
+    "category": "client",
+    "cancelable": true,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "message",
+        "type": "String",
+        "desc": ""
+      },
+      {
+        "name": "originalMessage",
+        "type": "String",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RenderNameTagEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RenderNameTagEvent",
+    "desc": "This event is fired before an entity renderer renders the nameplate of an entity.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "content",
+        "type": "Component",
+        "desc": ""
+      },
+      {
+        "name": "originalContent",
+        "type": "Component",
+        "desc": ""
+      },
+      {
+        "name": "entityRenderer",
+        "type": "EntityRenderer<?>",
+        "desc": ""
+      },
+      {
+        "name": "poseStack",
+        "type": "PoseStack",
+        "desc": ""
+      },
+      {
+        "name": "multiBufferSource",
+        "type": "MultiBufferSource",
+        "desc": ""
+      },
+      {
+        "name": "packedLight",
+        "type": "int",
+        "desc": ""
+      },
+      {
+        "name": "partialTick",
+        "type": "float",
+        "desc": ""
+      }
+    ],
+    "superClass": "EntityEvent",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterGuiLayersEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterGuiLayersEvent",
+    "desc": "Allows users to register custom LayeredDraw.Layer layers for GUI rendering.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "PlaySoundSourceEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.sound.PlaySoundSourceEvent",
+    "desc": "Fired when a <em>non-streaming</em> sound is being played.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "SoundSourceEvent",
+    "deprecated": false
+  },
+  {
+    "name": "SoundEngineLoadEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.sound.SoundEngineLoadEvent",
+    "desc": "Fired when the SoundEngine is constructed or (re)loaded, such as during game initialization or when the sound\noutput device is changed.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "SoundEvent",
+    "deprecated": false
+  },
+  {
+    "name": "PlaySoundEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.sound.PlaySoundEvent",
+    "desc": "Fired when a sound is about to be played by the sound engine.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "name",
+        "type": "String",
+        "desc": ""
+      },
+      {
+        "name": "originalSound",
+        "type": "SoundInstance",
+        "desc": ""
+      },
+      {
+        "name": "sound",
+        "type": "SoundInstance",
+        "desc": ""
+      }
+    ],
+    "superClass": "SoundEvent",
+    "deprecated": false
+  },
+  {
+    "name": "PlayStreamingSourceEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.sound.PlayStreamingSourceEvent",
+    "desc": "Fired when a <em>streaming</em> sound is being played.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "SoundSourceEvent",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterKeyMappingsEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent",
+    "desc": "Allows users to register custom net.minecraft.client.KeyMapping key mappings.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterMenuScreensEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterMenuScreensEvent",
+    "desc": "",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterJsonAnimationTypesEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterJsonAnimationTypesEvent",
+    "desc": "Allows registering custom AnimationTargets and\nAnimationChannel.Interpolation interpolation functions for loading JSON entity animation files.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterPresetEditorsEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterPresetEditorsEvent",
+    "desc": "<p>Event for registering PresetEditor screen factories for world presets.</p>\n<p>This event is not ICancellableEvent cancellable, and does not HasResult have a result.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "ToastAddEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.ToastAddEvent",
+    "desc": "Fired when the client queues a Toast message to be shown onscreen.",
+    "category": "client",
+    "cancelable": true,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "toast",
+        "type": "public Toast",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterClientCommandsEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterClientCommandsEvent",
+    "desc": "Fired to allow mods to register client commands.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "dispatcher",
+        "type": "CommandDispatcher<CommandSourceStack>",
+        "desc": ""
+      },
+      {
+        "name": "buildContext",
+        "type": "CommandBuildContext",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "MovementInputUpdateEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.MovementInputUpdateEvent",
+    "desc": "<p>Fired after the player's movement inputs are updated.</p>\n<p>This event is not ICancellableEvent cancellable, and does not Event.HasResult have a result.</p>\n<p>This event is fired on the NeoForge#EVENT_BUS main Forge event bus,\nonly on the LogicalSide#CLIENT logical client.</p>",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "input",
+        "type": "Input",
+        "desc": ""
+      }
+    ],
+    "superClass": "PlayerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterNamedRenderTypesEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterNamedRenderTypesEvent",
+    "desc": "Allows users to register custom named RenderType render types.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "ClientChatReceivedEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.ClientChatReceivedEvent",
+    "desc": "Fired when a chat message is received on the client.",
+    "category": "client",
+    "cancelable": true,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "message",
+        "type": "Component",
+        "desc": ""
+      },
+      {
+        "name": "boundChatType",
+        "type": "ChatType.Bound",
+        "desc": ""
+      },
+      {
+        "name": "sender",
+        "type": "UUID",
+        "desc": ""
+      },
+      {
+        "name": "system",
+        "type": "boolean",
+        "desc": ""
+      },
+      {
+        "name": "playerChatMessage",
+        "type": "PlayerChatMessage",
+        "desc": ""
+      },
+      {
+        "name": "overlay",
+        "type": "boolean",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterMaterialAtlasesEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterMaterialAtlasesEvent",
+    "desc": "Fired for registering TextureAtlas texture atlases that will be used with Material or\nother systems which retrieve the atlas via Minecraft#getTextureAtlas(ResourceLocation) or\nModelManager#getAtlas(ResourceLocation).",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "CalculatePlayerTurnEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.CalculatePlayerTurnEvent",
+    "desc": "Fired in MouseHandler#turnPlayer() MouseHandler#turnPlayer() when retrieving the values of Options#sensitivity() mouse sensitivity and Options#smoothCamera cinematic camera, prior to running calculations on these values.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "mouseSensitivity",
+        "type": "double",
+        "desc": ""
+      },
+      {
+        "name": "cinematicCameraEnabled",
+        "type": "boolean",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "CalculateDetachedCameraDistanceEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.CalculateDetachedCameraDistanceEvent",
+    "desc": "Fired for hooking the maximum distance from the player to the camera in third-person view.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "camera",
+        "type": "Camera",
+        "desc": ""
+      },
+      {
+        "name": "cameraFlipped",
+        "type": "boolean",
+        "desc": ""
+      },
+      {
+        "name": "entityScalingFactor",
+        "type": "float",
+        "desc": ""
+      },
+      {
+        "name": "distance",
+        "type": "float",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "GatherSkippedAttributeTooltipsEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.GatherSkippedAttributeTooltipsEvent",
+    "desc": "This event is used to collect the IDs of attribute modifiers that will not be displayed in item tooltips.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "stack",
+        "type": "ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "ctx",
+        "type": "AttributeTooltipContext",
+        "desc": ""
+      },
+      {
+        "name": "context",
+        "type": "AttributeTooltipContext",
+        "desc": ""
+      },
+      {
+        "name": "skippingAll",
+        "type": "boolean",
+        "desc": ""
+      },
+      {
+        "name": "skippedIds",
+        "type": "Set<ResourceLocation>",
+        "desc": ""
+      },
+      {
+        "name": "skippedGroups",
+        "type": "Set<EquipmentSlotGroup>",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterSpriteSourceTypesEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterSpriteSourceTypesEvent",
+    "desc": "Fired to allow mods to register their own SpriteSourceType.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterItemDecorationsEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterItemDecorationsEvent",
+    "desc": "Allows users to register custom IItemDecorator IItemDecorator to Items.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RenderArmEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RenderArmEvent",
+    "desc": "Fired before the player's arm is rendered in first person.",
+    "category": "client",
+    "cancelable": true,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "arm",
+        "type": "HumanoidArm",
+        "desc": ""
+      },
+      {
+        "name": "poseStack",
+        "type": "PoseStack",
+        "desc": ""
+      },
+      {
+        "name": "multiBufferSource",
+        "type": "MultiBufferSource",
+        "desc": ""
+      },
+      {
+        "name": "packedLight",
+        "type": "int",
+        "desc": ""
+      },
+      {
+        "name": "player",
+        "type": "AbstractClientPlayer",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "AddSectionGeometryEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.AddSectionGeometryEvent",
+    "desc": "This event can be used to add static geometry to chunk sections.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "additionalRenderers",
+        "type": "List<AdditionalSectionRenderer>",
+        "desc": ""
+      },
+      {
+        "name": "sectionOrigin",
+        "type": "BlockPos",
+        "desc": ""
+      },
+      {
+        "name": "level",
+        "type": "Level",
+        "desc": ""
+      },
+      {
+        "name": "poseStack",
+        "type": "public PoseStack",
+        "desc": ""
+      },
+      {
+        "name": "region",
+        "type": "BlockAndTintGetter",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterRecipeBookCategoriesEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterRecipeBookCategoriesEvent",
+    "desc": "Allows users to register custom categories for the vanilla recipe book, making it usable in modded GUIs.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RenderBlockScreenEffectEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RenderBlockScreenEffectEvent",
+    "desc": "Fired before a block texture will be overlaid on the player's view.",
+    "category": "client",
+    "cancelable": true,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "player",
+        "type": "Player",
+        "desc": ""
+      },
+      {
+        "name": "poseStack",
+        "type": "PoseStack",
+        "desc": ""
+      },
+      {
+        "name": "overlayType",
+        "type": "OverlayType",
+        "desc": ""
+      },
+      {
+        "name": "blockState",
+        "type": "BlockState",
+        "desc": ""
+      },
+      {
+        "name": "blockPos",
+        "type": "BlockPos",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterEntitySpectatorShadersEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterEntitySpectatorShadersEvent",
+    "desc": "Allows users to register custom shaders to be used when the player spectates a certain kind of entity.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterDimensionTransitionScreenEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterDimensionTransitionScreenEvent",
+    "desc": "<p>Event for registering screen effects when transitioning across dimensions.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "GatherEffectScreenTooltipsEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.GatherEffectScreenTooltipsEvent",
+    "desc": "This event is called when an EffectRenderingInventoryScreen draws the tooltip lines for a hovered MobEffectInstance.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "screen",
+        "type": "EffectRenderingInventoryScreen<?>",
+        "desc": ""
+      },
+      {
+        "name": "effectInst",
+        "type": "MobEffectInstance",
+        "desc": ""
+      },
+      {
+        "name": "tooltip",
+        "type": "List<Component>",
+        "desc": ""
+      },
+      {
+        "name": "effectInstance",
+        "type": "MobEffectInstance",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "ClientPlayerChangeGameTypeEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.ClientPlayerChangeGameTypeEvent",
+    "desc": "Fired when the client player is notified of a change of GameType from the server.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "info",
+        "type": "PlayerInfo",
+        "desc": ""
+      },
+      {
+        "name": "currentGameType",
+        "type": "GameType",
+        "desc": ""
+      },
+      {
+        "name": "newGameType",
+        "type": "GameType",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "ScreenshotEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.ScreenshotEvent",
+    "desc": "Fired when a screenshot is taken, but before it is written to disk.",
+    "category": "client",
+    "cancelable": true,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "DEFAULT_CANCEL_REASON",
+        "type": "Component",
+        "desc": ""
+      },
+      {
+        "name": "image",
+        "type": "NativeImage",
+        "desc": ""
+      },
+      {
+        "name": "screenshotFile",
+        "type": "File",
+        "desc": ""
+      },
+      {
+        "name": "resultMessage",
+        "type": "Component",
+        "desc": ""
+      },
+      {
+        "name": "cancelMessage",
+        "type": "Component",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterClientReloadListenersEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterClientReloadListenersEvent",
+    "desc": "Fired to allow mods to register their reload listeners on the client-side resource manager.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RenderLevelStageEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RenderLevelStageEvent",
+    "desc": "Fires at various times during LevelRenderer.renderLevel.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "AFTER_SKY",
+        "type": "Stage",
+        "desc": ""
+      },
+      {
+        "name": "AFTER_SOLID_BLOCKS",
+        "type": "Stage",
+        "desc": ""
+      },
+      {
+        "name": "AFTER_CUTOUT_MIPPED_BLOCKS_BLOCKS",
+        "type": "Stage",
+        "desc": ""
+      },
+      {
+        "name": "AFTER_CUTOUT_BLOCKS",
+        "type": "Stage",
+        "desc": ""
+      },
+      {
+        "name": "AFTER_ENTITIES",
+        "type": "Stage",
+        "desc": ""
+      },
+      {
+        "name": "stage",
+        "type": "Stage",
+        "desc": ""
+      },
+      {
+        "name": "levelRenderer",
+        "type": "LevelRenderer",
+        "desc": ""
+      },
+      {
+        "name": "poseStack",
+        "type": "PoseStack",
+        "desc": ""
+      },
+      {
+        "name": "modelViewMatrix",
+        "type": "Matrix4f",
+        "desc": ""
+      },
+      {
+        "name": "projectionMatrix",
+        "type": "Matrix4f",
+        "desc": ""
+      },
+      {
+        "name": "renderTick",
+        "type": "int",
+        "desc": ""
+      },
+      {
+        "name": "partialTick",
+        "type": "DeltaTracker",
+        "desc": ""
+      },
+      {
+        "name": "camera",
+        "type": "Camera",
+        "desc": ""
+      },
+      {
+        "name": "frustum",
+        "type": "Frustum",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterClientTooltipComponentFactoriesEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterClientTooltipComponentFactoriesEvent",
+    "desc": "Allows users to register custom net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipComponent\nfactories for their net.minecraft.world.inventory.tooltip.TooltipComponent types.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterParticleProvidersEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent",
+    "desc": "Fired for registering particle providers at the appropriate time.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RenderItemInFrameEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RenderItemInFrameEvent",
+    "desc": "Fired before an item stack is rendered in an item frame.",
+    "category": "client",
+    "cancelable": true,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "itemStack",
+        "type": "ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "itemFrameEntity",
+        "type": "ItemFrame",
+        "desc": ""
+      },
+      {
+        "name": "renderer",
+        "type": "ItemFrameRenderer<?>",
+        "desc": ""
+      },
+      {
+        "name": "poseStack",
+        "type": "PoseStack",
+        "desc": ""
+      },
+      {
+        "name": "multiBufferSource",
+        "type": "MultiBufferSource",
+        "desc": ""
+      },
+      {
+        "name": "packedLight",
+        "type": "int",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "AddAttributeTooltipsEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.AddAttributeTooltipsEvent",
+    "desc": "This event is fired after attribute tooltip lines have been added to an item stack's tooltip in AttributeUtil#addAttributeTooltips.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "stack",
+        "type": "ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "tooltip",
+        "type": "Consumer<Component>",
+        "desc": ""
+      },
+      {
+        "name": "ctx",
+        "type": "AttributeTooltipContext",
+        "desc": ""
+      },
+      {
+        "name": "context",
+        "type": "AttributeTooltipContext",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "SelectMusicEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.SelectMusicEvent",
+    "desc": "Fired when the net.minecraft.client.sounds.MusicManager checks what situational music should be used.",
+    "category": "client",
+    "cancelable": true,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "originalMusic",
+        "type": "Music",
+        "desc": ""
+      },
+      {
+        "name": "playingMusic",
+        "type": "SoundInstance",
+        "desc": ""
+      },
+      {
+        "name": "music",
+        "type": "Music",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "ComputeFovModifierEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.ComputeFovModifierEvent",
+    "desc": "Fired after the field of vision (FOV) modifier for the player is calculated to allow developers to adjust it further.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "player",
+        "type": "Player",
+        "desc": ""
+      },
+      {
+        "name": "fovModifier",
+        "type": "float",
+        "desc": ""
+      },
+      {
+        "name": "newFovModifier",
+        "type": "float",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterRenderBuffersEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterRenderBuffersEvent",
+    "desc": "Fired to allow mods to register custom BufferBuilder render buffers.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RecipesUpdatedEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RecipesUpdatedEvent",
+    "desc": "Fired when the RecipeManager has received and synced the recipes from the server to the client.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "recipeManager",
+        "type": "RecipeManager",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "TextureAtlasStitchedEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.TextureAtlasStitchedEvent",
+    "desc": "Fired <b>after</b> a texture atlas is stitched together and all textures therein have been loaded.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "atlas",
+        "type": "TextureAtlas",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterTicketControllersEvent",
+    "fullPath": "net.neoforged.neoforge.common.world.chunk.RegisterTicketControllersEvent",
+    "desc": "Fired in order to register chunk TicketController ticket controllers.",
+    "category": "common",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "NewRegistryEvent",
+    "fullPath": "net.neoforged.neoforge.registries.NewRegistryEvent",
+    "desc": "Fired when new registries can be constructed and registered.",
+    "category": "registries",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterEvent",
+    "fullPath": "net.neoforged.neoforge.registries.RegisterEvent",
+    "desc": "Fired for each registry when it is ready to have modded objects registered.",
+    "category": "registries",
+    "cancelable": false,
+    "bus": "MOD",
+    "fields": [
+      {
+        "name": "registryKey",
+        "type": "ResourceKey<? extends Registry<?>>",
+        "desc": ""
+      },
+      {
+        "name": "registry",
+        "type": "Registry<?>",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "ModifyRegistriesEvent",
+    "fullPath": "net.neoforged.neoforge.registries.ModifyRegistriesEvent",
+    "desc": "Fired during startup after builtin registries are constructed.",
+    "category": "registries",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "registries",
+        "type": "Iterable<? extends Registry<?>>",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "DataMapsUpdatedEvent",
+    "fullPath": "net.neoforged.neoforge.registries.datamaps.DataMapsUpdatedEvent",
+    "desc": "Event fired on the net.neoforged.neoforge.common.NeoForge#EVENT_BUS game event bus when the data maps of\na registry have either been UpdateCause#CLIENT_SYNC synced to the client or UpdateCause#SERVER_RELOAD reloaded on the server.",
+    "category": "registries",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "registries",
+        "type": "RegistryAccess",
+        "desc": ""
+      },
+      {
+        "name": "registry",
+        "type": "Registry<?>",
+        "desc": ""
+      },
+      {
+        "name": "registryKey",
+        "type": "ResourceKey<? extends Registry<?>>",
+        "desc": ""
+      },
+      {
+        "name": "cause",
+        "type": "UpdateCause",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterDataMapTypesEvent",
+    "fullPath": "net.neoforged.neoforge.registries.datamaps.RegisterDataMapTypesEvent",
+    "desc": "Event fired on the mod event bus, in order to register DataMapType data map types.",
+    "category": "registries",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "IdMappingEvent",
+    "fullPath": "net.neoforged.neoforge.registries.IdMappingEvent",
+    "desc": "Called whenever the ID mapping might have changed.",
+    "category": "registries",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "registry",
+        "type": "ResourceLocation",
+        "desc": ""
+      },
+      {
+        "name": "key",
+        "type": "ResourceLocation",
+        "desc": ""
+      },
+      {
+        "name": "oldId",
+        "type": "int",
+        "desc": ""
+      },
+      {
+        "name": "newId",
+        "type": "int",
+        "desc": ""
+      },
+      {
+        "name": "registries",
+        "type": "public ImmutableSet<ResourceLocation>",
+        "desc": ""
+      },
+      {
+        "name": "frozen",
+        "type": "public boolean",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "GatherDataEvent",
+    "fullPath": "net.neoforged.neoforge.data.event.GatherDataEvent",
+    "desc": "",
+    "category": "datagen",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "modContainer",
+        "type": "public ModContainer",
+        "desc": ""
+      },
+      {
+        "name": "inputs",
+        "type": "public Collection<Path>",
+        "desc": ""
+      },
+      {
+        "name": "mods",
+        "type": "Set<String>",
+        "desc": ""
+      },
+      {
+        "name": "generator",
+        "type": "public DataGenerator",
+        "desc": ""
+      },
+      {
+        "name": "existingFileHelper",
+        "type": "public ExistingFileHelper",
+        "desc": ""
+      },
+      {
+        "name": "lookupProvider",
+        "type": "public CompletableFuture<HolderLookup.Provider>",
+        "desc": ""
+      },
+      {
+        "name": "flat",
+        "type": "public boolean",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterCauldronFluidContentEvent",
+    "fullPath": "net.neoforged.neoforge.fluids.RegisterCauldronFluidContentEvent",
+    "desc": "Event to register CauldronFluidContent for modded cauldrons.",
+    "category": "fluids",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterCapabilitiesEvent",
+    "fullPath": "net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent",
+    "desc": "Fired to register capability providers at an appropriate time.",
+    "category": "capabilities",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterConfigurationTasksEvent",
+    "fullPath": "net.neoforged.neoforge.network.event.RegisterConfigurationTasksEvent",
+    "desc": "Fired when the server configuration packet listener collects all the configuration tasks\nthat should be run on the server to configure the client.",
+    "category": "network",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "configurationTasks",
+        "type": ".Internal\n    public Queue<ConfigurationTask>",
+        "desc": ""
+      },
+      {
+        "name": "listener",
+        "type": "ServerConfigurationPacketListener",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterPayloadHandlersEvent",
+    "fullPath": "net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent",
+    "desc": "Event fired when the NetworkRegistry is being set up.",
+    "category": "network",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "AddAttributeTooltipsEvent",
+    "fullPath": "net.neoforged.neoforge.event.AddAttributeTooltipsEvent",
+    "desc": "This event is fired after attribute tooltip lines have been added to an item stack's tooltip in AttributeUtil#addAttributeTooltips.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "stack",
+        "type": "ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "tooltip",
+        "type": "Consumer<Component>",
+        "desc": ""
+      },
+      {
+        "name": "ctx",
+        "type": "AttributeTooltipContext",
+        "desc": ""
+      },
+      {
+        "name": "context",
+        "type": "AttributeTooltipContext",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "AddServerReloadListenersEvent",
+    "fullPath": "net.neoforged.neoforge.event.AddServerReloadListenersEvent",
+    "desc": "The main ResourceManager is recreated on each reload, just after ReloadableServerResources's creation.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "serverResources",
+        "type": "ReloadableServerResources",
+        "desc": ""
+      },
+      {
+        "name": "conditionContext",
+        "type": "ICondition.IContext",
+        "desc": ""
+      },
+      {
+        "name": "registryAccess",
+        "type": "RegistryAccess",
+        "desc": ""
+      }
+    ],
+    "superClass": "SortedReloadListenerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "DefaultDataComponentsBoundEvent",
+    "fullPath": "net.neoforged.neoforge.event.DefaultDataComponentsBoundEvent",
+    "desc": "This event is emitted after data components have been bound to holders in a registry.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "updateCause",
+        "type": "UpdateCause",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "GatherSkippedAttributeTooltipsEvent",
+    "fullPath": "net.neoforged.neoforge.event.GatherSkippedAttributeTooltipsEvent",
+    "desc": "This event is used to collect the IDs of attribute modifiers that will not be displayed in item tooltips.",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "stack",
+        "type": "ItemStack",
+        "desc": ""
+      },
+      {
+        "name": "ctx",
+        "type": "AttributeTooltipContext",
+        "desc": ""
+      },
+      {
+        "name": "context",
+        "type": "AttributeTooltipContext",
+        "desc": ""
+      },
+      {
+        "name": "skippingAll",
+        "type": "boolean",
+        "desc": ""
+      },
+      {
+        "name": "skippedIds",
+        "type": "Set<Identifier>",
+        "desc": ""
+      },
+      {
+        "name": "skippedGroups",
+        "type": "Set<EquipmentSlotGroup>",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "FluidTooltipEvent",
+    "fullPath": "net.neoforged.neoforge.event.entity.player.FluidTooltipEvent",
+    "desc": "",
+    "category": "events",
+    "cancelable": false,
+    "bus": "GAME",
+    "fields": [
+      {
+        "name": "flags",
+        "type": "TooltipFlag",
+        "desc": ""
+      },
+      {
+        "name": "fluidStack",
+        "type": "FluidStack",
+        "desc": ""
+      },
+      {
+        "name": "toolTip",
+        "type": "List<Component>",
+        "desc": ""
+      },
+      {
+        "name": "entity",
+        "type": "Player",
+        "desc": ""
+      },
+      {
+        "name": "context",
+        "type": "TooltipContext",
+        "desc": ""
+      }
+    ],
+    "superClass": "PlayerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "AddClientReloadListenersEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.AddClientReloadListenersEvent",
+    "desc": "This event allows mods to register client-side reload listeners to the resource manager.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "SortedReloadListenerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "ClientResourceLoadFinishedEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.ClientResourceLoadFinishedEvent",
+    "desc": "Fires after the client has completed loading or reloading its resources\nsuccessfully.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "initial",
+        "type": "boolean",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "ConfigureMainRenderTargetEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.ConfigureMainRenderTargetEvent",
+    "desc": "Fired when configuring the MainTarget main render target during startup.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "stencilEnabled",
+        "type": "boolean",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "PlayerHeartTypeEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.PlayerHeartTypeEvent",
+    "desc": "Fired by Gui.HeartType#forPlayer to allow mods to change the heart sprite which is displayed in the player's\nhealth bar.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "originalType",
+        "type": "Gui.HeartType",
+        "desc": ""
+      },
+      {
+        "name": "type",
+        "type": "Gui.HeartType",
+        "desc": ""
+      }
+    ],
+    "superClass": "PlayerEvent",
+    "deprecated": false
+  },
+  {
+    "name": "RecipesReceivedEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RecipesReceivedEvent",
+    "desc": "This event is fired on the client when it has finished receiving recipe data\nfrom the server.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [
+      {
+        "name": "recipeTypes",
+        "type": "Set<RecipeType<?>>",
+        "desc": ""
+      },
+      {
+        "name": "recipeMap",
+        "type": "RecipeMap",
+        "desc": ""
+      }
+    ],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterBlockStateModels",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterBlockStateModels",
+    "desc": "Fire to register new types of CustomUnbakedBlockStateModel and CustomBlockModelDefinition.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterConditionalItemModelPropertyEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterConditionalItemModelPropertyEvent",
+    "desc": "Event fired when special model renderers are registered.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterCustomEnvironmentEffectRendererEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterCustomEnvironmentEffectRendererEvent",
+    "desc": "Allows users to register custom environmental effect renderers, such as CustomCloudsRenderer,\nCustomSkyboxRenderer or CustomWeatherEffectRenderer.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterItemModelsEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterItemModelsEvent",
+    "desc": "Event fired when item models are registered.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterParticleGroupsEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterParticleGroupsEvent",
+    "desc": "Fired for registering additional ParticleGroup particle group factories.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterRangeSelectItemModelPropertyEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterRangeSelectItemModelPropertyEvent",
+    "desc": "Event fired when special model renderers are registered.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterRecipeBookSearchCategoriesEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterRecipeBookSearchCategoriesEvent",
+    "desc": "Event to register ExtendedRecipeBookCategory instances for search.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterRenderPipelinesEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterRenderPipelinesEvent",
+    "desc": "Fired to allow mods to register custom RenderPipeline pipelines.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterSelectItemModelPropertyEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterSelectItemModelPropertyEvent",
+    "desc": "Event fired when item model property selectors are registered.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterSpecialModelRendererEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterSpecialModelRendererEvent",
+    "desc": "Event fired when special model renderers are registered.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterSpriteSourcesEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterSpriteSourcesEvent",
+    "desc": "Fired to allow mods to register their own SpriteSource codecs.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterTextureAtlasesEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.RegisterTextureAtlasesEvent",
+    "desc": "Fired for registering TextureAtlas texture atlases to the AtlasManager.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "ClientStartedEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.lifecycle.ClientStartedEvent",
+    "desc": "Emitted right before the client ticks for the first time.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "ClientLifecycleEvent",
+    "deprecated": false
+  },
+  {
+    "name": "ClientStoppedEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.lifecycle.ClientStoppedEvent",
+    "desc": "Called after ClientStoppingEvent when the client has completely shut down.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "ClientLifecycleEvent",
+    "deprecated": false
+  },
+  {
+    "name": "ClientStoppingEvent",
+    "fullPath": "net.neoforged.neoforge.client.event.lifecycle.ClientStoppingEvent",
+    "desc": "Called when the client begins an orderly shutdown, before ClientStoppedEvent.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "ClientLifecycleEvent",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterClientPayloadHandlersEvent",
+    "fullPath": "net.neoforged.neoforge.client.network.event.RegisterClientPayloadHandlersEvent",
+    "desc": "Event fired on the mod event bus when the ClientNetworkRegistry is being set up.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  },
+  {
+    "name": "RegisterRenderStateModifiersEvent",
+    "fullPath": "net.neoforged.neoforge.client.renderstate.RegisterRenderStateModifiersEvent",
+    "desc": "Fired for registering modifier functions for various render state objects.",
+    "category": "client",
+    "cancelable": false,
+    "bus": "UNKNOWN",
+    "fields": [],
+    "superClass": "Event",
+    "deprecated": false
+  }
+]

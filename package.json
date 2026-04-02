@@ -1,0 +1,27 @@
+{
+  "name": "neoforge-26.1-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server providing NeoForge 26.1 (MC 1.26.1) API documentation and code generation for AI assistants",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "generate-docs": "tsx scripts/generate-docs.ts",
+    "start": "node dist/src/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "adm-zip": "^0.5.16",
+    "zod": "^3.25.1"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.7",
+    "@types/node": "^22.15.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
